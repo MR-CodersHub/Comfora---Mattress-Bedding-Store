@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Showrooms | COMFORA Luxury Sleep</title>
+  <meta name="description" content="Visit COMFORA flagship luxury sleeps in New York, London, and Sydney. Book a private mattress consultation or contact our concierge.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span>✨ <strong class="top-bar-highlight">VIP Private Showroom Consultations</strong> • Champagne &amp; Spine-Mapping</span>
+        <span>• 100-Night Trial</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="trial-delivery.html" class="top-bar-link">Trial &amp; Return Policy</a>
+        <span>•</span>
+        <a href="contact.html" class="top-bar-link">Flagship Showrooms</a>
+        <span>•</span>
+        <span class="top-bar-highlight">Concierge: +1 (212) 555-8920</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">COMFORA</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="trial-delivery.html" class="nav-link">Trial & Delivery</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-action-btn header-cart-btn" onclick="AuraCart.openCartDrawer()" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="header-badge-count cart-count-badge">0</span></button>
+        <button class="header-action-btn header-theme-toggle" onclick="AuraTheme.toggleTheme(event)" aria-label="Toggle Theme" title="Toggle Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button class="header-rtl-btn header-rtl-toggle" onclick="AuraTheme.toggleRTL(event)" aria-label="Toggle Direction" title="Toggle RTL/LTR">RTL</button>
+        <a href="#showroomBookingSection" class="btn btn-primary btn-sm header-cta-btn">Book Visit</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-text"><span class="brand-name" style="font-size: 1.25rem;">COMFORA</span></div>
+      <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+    </div>
+
+    <!-- Mobile Cart Button in Drawer -->
+    <div class="mobile-drawer-cart-row">
+      <button class="mobile-drawer-cart-btn" onclick="AuraCart.openCartDrawer(); document.getElementById('mobileNavClose').click();">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>Shopping Bag (<strong class="cart-count-badge">0</strong>)</span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="home2.html" class="mobile-nav-link">Home 2 <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="products.html" class="mobile-nav-link">Mattresses &amp; Bedding <span>→</span></a>
+      <a href="blog.html" class="mobile-nav-link">Sleep Journal <span>→</span></a>
+      <a href="trial-delivery.html" class="mobile-nav-link">100-Night Trial &amp; Delivery <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link active">Showrooms &amp; Contact <span>→</span></a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="#showroomBookingSection" class="btn btn-primary btn-block" style="width: 100%; margin-bottom: 0.75rem; text-align: center;" onclick="document.getElementById('mobileNavClose').click();">Book Private Fitting</a>
+      <div style="font-size: 0.8125rem; color: var(--text-muted); text-align: center;">VIP Concierge: +1 (212) 555-8920</div>
+    </div>
+  </aside>
+
+  <!-- MAIN PAGE CONTENT (EXACTLY 6 SECTIONS) -->
+  <main id="mainContent">
+
+    <!-- SECTION 1: CONTACT HERO & CONCIERGE OVERVIEW -->
+    <section class="section-padding" style="background: radial-gradient(circle at 75% 25%, #FAF2E6 0%, #FAF7F2 60%);" id="contactHeroSection">
+      <div class="container">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto 3rem auto;">
+          <span class="section-tag">Dedicated Sleep Concierge</span>
+          <h1 class="section-title" style="font-size: clamp(1.85rem, 2.8vw, 2.5rem); margin-bottom: 0.75rem;">
+            We Are Here to Assist Your Rest
+          </h1>
+          <p class="section-desc">
+            Whether you wish to schedule a private showroom sleep trial, require tailored sizing advice, or have questions regarding your 100-night trial, our sleep specialists are at your disposal.
+          </p>
+        </div>
+
+        <div class="grid-equal-3col">
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-subtle);">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background-color: var(--accent-gold-light); color: var(--accent-bronze); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.35rem;">Concierge Line</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">Mon - Sat, 9:00 AM - 8:00 PM EST</p>
+            <a href="tel:+12125558920" style="font-weight: 700; color: var(--accent-bronze); font-size: 1.05rem;">+1 (212) 555-8920</a>
+          </div>
+
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-subtle);">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background-color: var(--accent-gold-light); color: var(--accent-bronze); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.35rem;">Studio Email</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">24-hour response guarantee</p>
+            <a href="mailto:concierge@comfora-sleep.com" style="font-weight: 700; color: var(--accent-bronze); font-size: 1.05rem;">concierge@comfora-sleep.com</a>
+          </div>
+
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); text-align: center; box-shadow: var(--shadow-subtle);">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background-color: var(--accent-gold-light); color: var(--accent-bronze); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem auto;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v11H9Z"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.35rem;">Private Showrooms</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">New York • London • Sydney</p>
+            <a href="#showroomLocationsSection" style="font-weight: 700; color: var(--accent-bronze); font-size: 1.05rem;">View Showrooms ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FLAGSHIP SHOWROOM LOCATIONS & OPENING HOURS -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="showroomLocationsSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Flagship Sanctuaries</span>
+          <h2 class="section-title">Visit Our Sleep Showrooms</h2>
+          <p class="section-desc">Experience our complete mattress collection in person within sound-dampened private sleep suites.</p>
+        </div>
+
+        <div class="grid-equal-3col">
+          <!-- SoHo New York -->
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle); display: flex; flex-direction: column;">
+            <span class="product-badge badge-gold" style="align-self: flex-start; margin-bottom: 1rem;">Flagship Showroom</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.5rem;">New York — SoHo</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">482 West Broadway, SoHo, NY 10012</p>
+            <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem; padding: 0.85rem; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+              <strong>Opening Hours:</strong><br>
+              Mon - Sat: 10:00 AM - 7:00 PM<br>
+              Sun: 11:00 AM - 6:00 PM<br>
+              <em>*Valet parking available</em>
+            </div>
+            <a href="#showroomBookingSection" class="btn btn-secondary btn-sm" style="margin-top: auto;">Book Visit in SoHo</a>
+          </div>
+
+          <!-- Mayfair London -->
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle); display: flex; flex-direction: column;">
+            <span class="product-badge badge-gold" style="align-self: flex-start; margin-bottom: 1rem;">European Sanctuary</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.5rem;">London — Mayfair</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">14 Mount Street, Mayfair, London W1K 2RF</p>
+            <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem; padding: 0.85rem; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+              <strong>Opening Hours:</strong><br>
+              Mon - Sat: 10:00 AM - 6:30 PM<br>
+              Sun: 12:00 PM - 5:00 PM<br>
+              <em>*Private chauffeur available upon request</em>
+            </div>
+            <a href="#showroomBookingSection" class="btn btn-secondary btn-sm" style="margin-top: auto;">Book Visit in Mayfair</a>
+          </div>
+
+          <!-- Paddington Sydney -->
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle); display: flex; flex-direction: column;">
+            <span class="product-badge badge-trial" style="align-self: flex-start; margin-bottom: 1rem;">Pacific Studio</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.35rem; margin-bottom: 0.5rem;">Sydney — Paddington</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">128 Oxford Street, Paddington NSW 2021</p>
+            <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem; padding: 0.85rem; background: var(--bg-secondary); border-radius: var(--radius-sm);">
+              <strong>Opening Hours:</strong><br>
+              Mon - Sat: 9:30 AM - 5:30 PM<br>
+              Sun: 11:00 AM - 4:00 PM<br>
+              <em>*Reserved customer parking on-site</em>
+            </div>
+            <a href="#showroomBookingSection" class="btn btn-secondary btn-sm" style="margin-top: auto;">Book Visit in Paddington</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INTERACTIVE STORE VISIT BOOKING FORM -->
+    <section class="section-padding" id="showroomBookingSection">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="section-tag">Private Appointment</span>
+          <h2 class="section-title">Reserve a Private Sleep Fitting</h2>
+          <p class="section-desc">Experience a 45-minute customized spinal ergonomics consultation with Champagne in our private sleep suite.</p>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="showroomBookingForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="bookingName">Full Name *</label>
+                <input type="text" id="bookingName" class="form-input" placeholder="e.g. Eleanor Vance" required>
+                <span class="error-msg">Please enter your full name</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bookingEmail">Email Address *</label>
+                <input type="email" id="bookingEmail" class="form-input" placeholder="e.g. eleanor@example.com" required>
+                <span class="error-msg">Please enter a valid email</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="bookingPhone">Phone Number *</label>
+                <input type="tel" id="bookingPhone" class="form-input" placeholder="e.g. +1 (212) 555-0199" required>
+                <span class="error-msg">Please enter a valid phone number</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bookingShowroom">Select Studio Showroom *</label>
+                <select id="bookingShowroom" class="form-select" required>
+                  <option value="">-- Choose Showroom --</option>
+                  <option value="ny-soho">SoHo Studio — 482 West Broadway, NY</option>
+                  <option value="london-mayfair">Mayfair Sanctuary — 14 Mount St, London</option>
+                  <option value="sydney-paddington">Paddington Studio — 128 Oxford St, Sydney</option>
+                </select>
+                <span class="error-msg">Please select an Studio showroom</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="bookingDate">Preferred Date *</label>
+                <input type="date" id="bookingDate" class="form-input" required>
+                <span class="error-msg">Please select an appointment date</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="bookingTime">Preferred Time Slot *</label>
+                <select id="bookingTime" class="form-select" required>
+                  <option value="">-- Select Time Slot --</option>
+                  <option value="10:30 AM">10:30 AM (Morning Session)</option>
+                  <option value="1:00 PM">1:00 PM (Midday Consultation)</option>
+                  <option value="3:30 PM">3:30 PM (Afternoon Fitting)</option>
+                  <option value="5:30 PM">5:30 PM (Evening Private Suite)</option>
+                </select>
+                <span class="error-msg">Please select a time slot</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookingInterest">Primary Sleep Interest</label>
+              <select id="bookingInterest" class="form-select">
+                <option value="Pocket Spring Hybrid Consultation">Pocket Spring Hybrid Mattresses</option>
+                <option value="Natural Organic Latex Exploration">100% Botanical Latex Mattresses</option>
+                <option value="Orthopaedic Lower Back Pain Relief">Orthopaedic Spinal Decompression</option>
+                <option value="Luxury Bedding & Silk Suite Consultation">Mulberry Silk &amp; Down Bedding Suite</option>
+                <option value="Comprehensive Bedroom Sleep Overhaul">Complete Bedroom Sleep Overhaul</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+              Confirm Private Studio Fitting
+            </button>
+            <div style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; justify-content: center; gap: 0.35rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>Complimentary private consultation. No purchase obligation.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: GENERAL ENQUIRY & SUPPORT AREA -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="supportEnquirySection">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="section-tag">Client Support</span>
+          <h2 class="section-title">Send a Message to Concierge</h2>
+          <p class="section-desc">Have questions regarding custom mattress dimensions, warranty coverage, or shipping times? Send us an inquiry.</p>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="generalContactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Name *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Your name" required>
+                <span class="error-msg">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Your Email *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="Your email" required>
+                <span class="error-msg">Please enter a valid email</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Inquiry Topic</label>
+              <select id="contactSubject" class="form-select">
+                <option value="Trial & Return Question">100-Night Home Trial Inquiry</option>
+                <option value="Custom Size Request">Bespoke / Custom Mattress Sizing</option>
+                <option value="Delivery Schedule">White-Glove Delivery Scheduling</option>
+                <option value="Warranty Claim">15-Year Warranty Information</option>
+                <option value="Other">General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message *</label>
+              <textarea id="contactMessage" class="form-textarea" rows="4" placeholder="How can our sleep concierge assist you today?" required></textarea>
+              <span class="error-msg">Please type your message</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INTERACTIVE SHOWROOM LOCATION MAP & SANCTUARY EXPLORER -->
+    <section class="section-padding" id="locationMapSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Flagship Sanctuaries &amp; Map</span>
+          <h2 class="section-title">Explore Our Flagship Sanctuaries</h2>
+          <p class="section-desc">Select a flagship showroom below to inspect private acoustic test suites, live opening hours, and direct navigation links.</p>
+        </div>
+
+        <div class="showroom-explorer-wrapper" id="showroomExplorer">
+          <!-- City Switcher Tabs -->
+          <div class="showroom-tabs-nav">
+            <button type="button" class="showroom-tab-btn active" data-city="soho">
+              <div class="showroom-tab-flag">NY</div>
+              <div class="showroom-tab-content">
+                <span class="showroom-tab-city">New York</span>
+                <span class="showroom-tab-sub">SoHo Flagship Studio</span>
+              </div>
+            </button>
+
+            <button type="button" class="showroom-tab-btn" data-city="london">
+              <div class="showroom-tab-flag">LDN</div>
+              <div class="showroom-tab-content">
+                <span class="showroom-tab-city">London</span>
+                <span class="showroom-tab-sub">Mayfair Sanctuary</span>
+              </div>
+            </button>
+
+            <button type="button" class="showroom-tab-btn" data-city="sydney">
+              <div class="showroom-tab-flag">SYD</div>
+              <div class="showroom-tab-content">
+                <span class="showroom-tab-city">Sydney</span>
+                <span class="showroom-tab-sub">Paddington Studio</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Main Interactive Display Grid -->
+          <div class="showroom-display-grid">
+            <!-- Left: Media & Hotspots Showcase -->
+            <div class="showroom-media-col">
+              <div class="showroom-media-container">
+                <!-- Top Floating Controls -->
+                <div class="showroom-media-topbar">
+                  <div class="showroom-status-pill">
+                    <span class="showroom-status-dot"></span>
+                    <span class="showroom-status-text">Open Today • 10:00 AM – 7:00 PM</span>
+                  </div>
+
+                  <div class="showroom-mode-switcher">
+                    <button type="button" class="showroom-mode-btn showroom-mode-photo active">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                      <span>Gallery</span>
+                    </button>
+                    <button type="button" class="showroom-mode-btn showroom-mode-map">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+                      <span>Map</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Gallery Photo -->
+                <img src="assets/images/showroom_soho.jpg" alt="SoHo Flagship Studio Interior" class="showroom-media-img">
+
+                <!-- Interactive Hotspots Layer -->
+                <div class="showroom-hotspot-layer">
+                  <!-- Rendered dynamically by initShowroomExplorer -->
+                </div>
+
+                <!-- Google Map Embed Iframe -->
+                <iframe class="showroom-map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.630985223393!2d-74.00331008459461!3d40.72398597933018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598ea06225e3%3A0x7d6a50613dc033f7!2s482%20W%20Broadway%2C%20New%20York%2C%20NY%2010012!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Showroom Location Map"></iframe>
+              </div>
+            </div>
+
+            <!-- Right: Rich Details & Booking Actions -->
+            <div class="showroom-info-col">
+              <span class="showroom-badge-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span class="showroom-badge-tag-text">Flagship Sanctuary • North America</span>
+              </span>
+
+              <h3 class="showroom-title">SoHo Flagship Studio</h3>
+              <p class="showroom-description">
+                Located in the heart of Manhattan's Cast Iron Historic District, featuring four soundproof private test suites, our master silk &amp; cashmere bedding atelier, and tailored spinal ergonomics consultations.
+              </p>
+
+              <!-- Luxury Amenities 2x2 Grid -->
+              <div class="showroom-amenities-grid">
+                <!-- Rendered dynamically by initShowroomExplorer -->
+              </div>
+
+              <!-- Metadata Box -->
+              <div class="showroom-meta-box">
+                <div class="showroom-meta-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div><strong>Address:</strong> <span class="showroom-meta-address">482 West Broadway, New York, NY 10012</span></div>
+                </div>
+
+                <div class="showroom-meta-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"/><path d="M9 18h6"/><path d="M10 8h4"/><path d="M12 4v4"/></svg>
+                  <div><strong>Transit:</strong> <span class="showroom-meta-transit">Spring St (C, E) or Prince St (N, R, W) — 2 min walk</span></div>
+                </div>
+
+                <div class="showroom-meta-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                  <div><strong>Parking:</strong> <span class="showroom-meta-parking">Complimentary Valet Parking on West Broadway</span></div>
+                </div>
+
+                <div class="showroom-meta-row">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <div><strong>Concierge:</strong> <a href="tel:+12125558920" class="showroom-meta-phone-link" style="color: var(--accent-bronze); font-weight: 600;"><span class="showroom-meta-phone">+1 (212) 555-8920</span></a></div>
+                </div>
+              </div>
+
+              <!-- Action CTAs -->
+              <div class="showroom-actions-row">
+                <a href="#showroomBookingSection" class="btn btn-primary showroom-book-trigger">
+                  Book Private Sleep Fitting
+                </a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-secondary showroom-gmap-link">
+                  Open in Maps ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: DIRECT HOTLINE & FAQ QUICK-LINKS CTA -->
+    <section class="section-padding-sm" style="background: var(--bg-dark); color: #FFFFFF;" id="directHotlineSection">
+      <div class="container">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+          <div>
+            <span class="section-tag no-after" style="color: var(--accent-gold);">Immediate Assistance</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.75rem; color: #FFFFFF; margin-bottom: 0.25rem;">Prefer to Speak with a Master Craftsman?</h3>
+            <p style="color: var(--text-inverse-muted); font-size: 0.95rem;">Our sleep concierge team is standing by to answer technical questions.</p>
+          </div>
+
+          <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+            <a href="tel:+12125558920" class="btn btn-primary btn-lg">Call +1 (212) 555-8920</a>
+            <a href="trial-delivery.html" class="btn btn-outline-gold btn-lg">Read FAQs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Footer Top Concierge & Trust Pillars Strip -->
+      <div class="footer-top-strip">
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">Artisanal Mastery</div>
+            <div class="footer-pillar-sub">Hand-tufted in European workshops</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">100-Night Trial</div>
+            <div class="footer-pillar-sub">100% risk-free in-home testing</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">White-Glove Setup</div>
+            <div class="footer-pillar-sub">Complimentary 2-person delivery</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">20-Year Guarantee</div>
+            <div class="footer-pillar-sub">Premier non-prorated warranty</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Main Grid -->
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">COMFORA</span>
+              <span class="brand-tagline">Luxury Sleep • EST. 1988</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Handcrafting European luxury sleep systems, botanical latex mattresses, and pure mulberry silk bedding since 1988.
+          </p>
+          <div class="footer-trust-badges">
+            <span class="footer-trust-pill">✓ OEKO-TEX® 100</span>
+            <span class="footer-trust-pill">✓ GOLS Organic Latex</span>
+            <span class="footer-trust-pill">✓ GOTS Certified</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.07-.98-.13-2.5.03-3.57.14-.98.93-6.33.93-6.33s-.24-.48-.24-1.18c0-1.11.64-1.94 1.45-1.94.68 0 1.01.51 1.01 1.13 0 .69-.44 1.72-.66 2.67-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.51 2.53-3.68 0-1.93-1.38-3.27-3.36-3.27-2.29 0-3.64 1.72-3.64 3.49 0 .69.27 1.43.6 1.83.07.08.08.15.06.23-.06.26-.2.83-.23.95-.04.15-.12.18-.28.11-1.04-.48-1.69-2-1.69-3.21 0-2.62 1.9-5.02 5.48-5.02 2.88 0 5.12 2.05 5.12 4.8 0 2.86-1.8 5.16-4.31 5.16-.84 0-1.63-.44-1.9-.96l-.52 1.97c-.19.72-.7 1.63-1.04 2.18A12 12 0 1 0 12 0z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="about.html" class="footer-link">Artisanal Story</a></li>
+            <li><a href="products.html" class="footer-link">Mattress Studio</a></li>
+            <li><a href="blog.html" class="footer-link">Sleep Journal</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">Trial &amp; Delivery</a></li>
+            <li><a href="contact.html" class="footer-link">Flagship Showrooms</a></li>
+          </ul>
+        </div>
+
+        <!-- Collections Col -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" class="footer-link">Celestial Hybrid <span class="tag-badge">Popular</span></a></li>
+            <li><a href="products.html" class="footer-link">Organic Latex</a></li>
+            <li><a href="products.html" class="footer-link">Zero-Gravity Memory</a></li>
+            <li><a href="products.html" class="footer-link">Orthocare Spinal Rest</a></li>
+            <li><a href="products.html" class="footer-link">Goose Down Pillows</a></li>
+            <li><a href="products.html" class="footer-link">Mulberry Silk Duvets</a></li>
+          </ul>
+        </div>
+
+        <!-- Client Care Col -->
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links">
+            <li><a href="trial-delivery.html" class="footer-link">100-Night Home Trial</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">White-Glove Setup</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">20-Year Warranty</a></li>
+            <li><a href="about.html" class="footer-link">Materials Provenance</a></li>
+            <li><a href="contact.html#showroomBookingSection" class="footer-link">Private Consultation</a></li>
+            <li><a href="contact.html" class="footer-link">Concierge: (212) 555-8920</a></li>
+          </ul>
+        </div>
+
+        <!-- VIP Sleep Gazette Card -->
+        <div>
+          <div class="footer-gazette-card">
+            <span class="footer-gazette-badge">✨ VIP Access</span>
+            <h4 class="footer-gazette-title">Join The Nocturne Circle</h4>
+            <p class="footer-gazette-desc">
+              Receive private preview invites, sleep ergonomics journals, and bespoke seasonal releases.
+            </p>
+            <form class="footer-newsletter-unified newsletter-form-trigger" onsubmit="event.preventDefault(); if(window.AuraCart){window.AuraCart.showToast('Subscribed to VIP Circle', 'Welcome to the Nocturne Circle.', 'success');}">
+              <input type="email" placeholder="Your email address..." required>
+              <button type="submit">Join →</button>
+            </form>
+            <div class="footer-gazette-privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>100% Private. Unsubscribe anytime.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>© 2026 COMFORA Luxury Sleep Studio Ltd. All rights reserved. Handcrafted European luxury.</div>
+        <div class="footer-bottom-links">
+          <a href="trial-delivery.html">Privacy Protocol</a>
+          <a href="trial-delivery.html">Terms of Service</a>
+          <a href="trial-delivery.html">100-Night Guarantee</a>
+          <a href="contact.html">Global Showrooms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Drawers & Modals -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title"><span>Shopping Bag</span><span class="drawer-count-badge cart-count-badge">0</span></div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeCartDrawer()">✕</button>
+    </div>
+    <div class="drawer-progress-box">
+      <div id="cartFreeShippingText">Add $1,000 to unlock Free White-Glove Setup.</div>
+      <div class="progress-track"><div class="progress-bar-fill" id="cartFreeShippingFill" style="width: 0%;"></div></div>
+    </div>
+    <div class="drawer-body" id="cartDrawerBody"></div>
+    <div class="drawer-footer">
+      <div class="cart-subtotal-row"><span>Subtotal:</span><span id="cartDrawerSubtotal">$0</span></div>
+      <button class="btn btn-primary btn-lg" id="cartCheckoutBtn" style="width: 100%;">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="wishlist-drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title"><span>Saved Wishlist</span><span class="drawer-count-badge wishlist-count-badge">0</span></div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeWishlistDrawer()">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody"></div>
+  </div>
+
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal-container search-modal-container">
+      <button class="modal-close-btn" id="searchModalClose">✕</button>
+      <span class="section-tag no-after">Search Collection</span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.45rem; margin-bottom: 1.25rem;">Search Mattresses &amp; Bedding</h3>
+      <div class="search-input-box">
+        <input type="text" id="globalSearchInput" placeholder="Search by type, size, or material...">
+      </div>
+      <div id="globalSearchResults" class="search-results-list"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

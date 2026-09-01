@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mattresses &amp; Bedding Studio | COMFORA Collection</title>
+  <meta name="description" content="Shop luxury pocket spring, natural organic latex, zero-gravity memory foam, orthopaedic mattresses, silk duvets, and pillows with 100-night risk-free trial.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span>✨ <strong class="top-bar-highlight">100-Night Risk-Free In-Home Trial</strong> On All Mattress Orders</span>
+        <span>• Complimentary White-Glove In-Home Setup</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="trial-delivery.html" class="top-bar-link">Trial &amp; Return Policy</a>
+        <span>•</span>
+        <a href="contact.html" class="top-bar-link">Flagship Showrooms</a>
+        <span>•</span>
+        <span class="top-bar-highlight">Concierge: +1 (212) 555-8920</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">COMFORA</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="trial-delivery.html" class="nav-link">Trial & Delivery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-action-btn header-cart-btn" onclick="AuraCart.openCartDrawer()" aria-label="Shopping Bag"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="header-badge-count cart-count-badge">0</span></button>
+        <button class="header-action-btn header-theme-toggle" onclick="AuraTheme.toggleTheme(event)" aria-label="Toggle Theme" title="Toggle Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button class="header-rtl-btn header-rtl-toggle" onclick="AuraTheme.toggleRTL(event)" aria-label="Toggle Direction" title="Toggle RTL/LTR">RTL</button>
+        <a href="#productsCatalogSection" class="btn btn-primary btn-sm header-cta-btn">View All</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-text">
+        <span class="brand-name" style="font-size: 1.25rem;">COMFORA</span>
+      </div>
+      <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+    </div>
+
+    <!-- Mobile Cart Button in Drawer -->
+    <div class="mobile-drawer-cart-row">
+      <button class="mobile-drawer-cart-btn" onclick="AuraCart.openCartDrawer(); document.getElementById('mobileNavClose').click();">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>Shopping Bag (<strong class="cart-count-badge">0</strong>)</span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="home2.html" class="mobile-nav-link">Home 2 <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="products.html" class="mobile-nav-link active">Mattresses &amp; Bedding <span>→</span></a>
+      <a href="blog.html" class="mobile-nav-link">Sleep Journal <span>→</span></a>
+      <a href="trial-delivery.html" class="mobile-nav-link">100-Night Trial &amp; Delivery <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Showrooms &amp; Contact <span>→</span></a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="#productsCatalogSection" class="btn btn-primary btn-block" style="width: 100%; margin-bottom: 0.75rem; text-align: center;" onclick="document.getElementById('mobileNavClose').click();">Explore All Suites</a>
+      <div style="font-size: 0.8125rem; color: var(--text-muted); text-align: center;">VIP Concierge: +1 (212) 555-8920</div>
+    </div>
+  </aside>
+
+  <!-- MAIN PAGE CONTENT (EXACTLY 6 SECTIONS) -->
+  <main id="mainContent">
+
+    <!-- SECTION 1: PRODUCTS HERO & QUICK CATEGORY BAR -->
+    <section style="padding: 2.25rem 0 1.5rem 0; background: radial-gradient(circle at 70% 30%, #FAF2E6 0%, #FAF7F2 60%); border-bottom: 1px solid var(--border-light);" id="productsHeroSection">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 1.25rem auto;">
+          <span class="section-tag" style="margin-bottom: 0.4rem;">Complete Sleep Sanctuary</span>
+          <h1 class="section-title" style="font-size: clamp(1.85rem, 3.2vw, 2.5rem); margin-bottom: 0.5rem;">
+            Mattresses &amp; Bedding Suites
+          </h1>
+          <p class="section-desc" style="font-size: 0.875rem; line-height: 1.55; margin-bottom: 0;">
+            Precision-crafted pocket spring hybrids, pure botanical latex, contouring memory foam, and orthopaedic mattresses paired with French flax linen, down pillows, and mulberry silk duvets.
+          </p>
+        </div>
+
+        <!-- Quick Categories Strip -->
+        <div style="display: flex; justify-content: center; gap: 0.45rem; flex-wrap: wrap;">
+          <button class="btn btn-secondary btn-sm category-filter-btn active" data-category="All">All Sleep Items</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Spring">Pocket Spring Hybrid</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Latex">Natural Latex</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Memory Foam">Zero-Gravity Memory</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Orthopaedic">Orthopaedic Support</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Pillows">Pillows</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Quilts & Comforters">Quilts &amp; Silk Duvets</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Bedding Sets">Bedding Sets</button>
+          <button class="btn btn-secondary btn-sm category-filter-btn" data-category="Protectors & Toppers">Toppers &amp; Protectors</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: LIVE FILTER & SORT TOOLBAR -->
+    <section style="padding: 0.75rem 0; background-color: var(--bg-card-alt); border-bottom: 1px solid var(--border-light);" id="filterToolbarSection">
+      <div class="container">
+        <div class="filter-toolbar">
+          <div class="filter-row">
+            <div class="filter-controls-group">
+              <span style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary); text-transform: uppercase;">Sort:</span>
+              <div class="filter-select-wrapper">
+                <select class="filter-select" id="catalogSortSelect" aria-label="Sort products">
+                  <option value="featured">Featured / Best Sellers</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating-desc">Highest Customer Rating</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filter-search-box">
+              <svg class="filter-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" class="filter-search-input" id="catalogSearchInput" placeholder="Filter by keyword (e.g. Latex, Silk)...">
+            </div>
+
+            <div id="productsCountDisplay" style="font-size: 0.875rem; color: var(--text-muted); font-weight: 600;">
+              Showing 9 luxury items
+            </div>
+          </div>
+
+          <!-- Sub-Filter Row for Bed Sizes -->
+          <div class="sub-filter-row">
+            <span class="sub-filter-label">Filter by Bed Size:</span>
+            <div class="sub-filter-pills">
+              <button class="size-filter-pill active" data-size="All">All Sizes</button>
+              <button class="size-filter-pill" data-size="Single">Single</button>
+              <button class="size-filter-pill" data-size="Double">Double</button>
+              <button class="size-filter-pill" data-size="Queen">Queen</button>
+              <button class="size-filter-pill" data-size="King">King</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: RICH INTERACTIVE PRODUCT CATALOG GRID -->
+    <section class="section-padding" id="productsCatalogSection">
+      <div class="container">
+        <div id="productsCatalogGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 2rem;">
+          <!-- Dynamically injected by products.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MATTRESS COMPARISON MATRIX TABLE -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="comparisonMatrixSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct Comparison</span>
+          <h2 class="section-title">Compare Mattress Disciplines</h2>
+          <p class="section-desc">Evaluate the technical specifications, firmness profiles, core support, and guarantees side by side.</p>
+        </div>
+
+        <div class="comparison-table-wrapper" id="mattressComparisonTable">
+          <!-- Dynamically populated by products.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: BEDDING ESSENTIALS & SLEEP BUNDLES SPOTLIGHT -->
+    <section class="section-padding" id="beddingSpotlightSection">
+      <div class="container">
+        <div class="bedding-spotlight-box" style="background: linear-gradient(135deg, #251B14 0%, #17100B 100%); border-radius: var(--radius-lg); padding: clamp(2rem, 5vw, 4rem); color: #FFFFFF; border: 1px solid rgba(194, 161, 119, 0.3); box-shadow: var(--shadow-card);">
+          <div class="grid-split-2col">
+            <div>
+              <span class="section-tag no-after" style="color: var(--accent-gold);">The Complete Suite</span>
+              <h2 style="font-size: clamp(2rem, 3.5vw, 2.85rem); color: #FFFFFF; margin-bottom: 1.25rem; font-family: var(--font-serif);">
+                Curate Your Dream Bedding Bundle
+              </h2>
+              <p style="font-size: 1.05rem; color: var(--text-inverse-muted); line-height: 1.7; margin-bottom: 2rem;">
+                Pair your mattress with our heirloom French Flax Linen Suite, Grade 6A Mulberry Silk Duvet, and 800-fill-power Goose Down Pillows to complete your 5-star bedroom sanctuary.
+              </p>
+
+              <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="AuraCart.addToCart('bed-2', 'King'); AuraCart.addToCart('bed-1', 'Queen');">
+                  Add Silk Duvet &amp; Down Pillows ($545)
+                </button>
+                <a href="#productsCatalogSection" class="btn btn-outline-gold">Browse Bedding Items</a>
+              </div>
+            </div>
+
+            <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(194, 161, 119, 0.3);">
+              <img src="assets/images/bedding_pillows.jpg" alt="Luxury Mulberry Silk and Linen Bedding Collection">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: 4-PILLAR SHOPPING ASSURANCE & GUARANTEES -->
+    <section class="section-padding-sm" style="background-color: var(--bg-card-alt); border-top: 1px solid var(--border-light);" id="assuranceGuaranteesSection">
+      <div class="container">
+        <div class="assurance-modern-grid">
+          <!-- Pillar 1 -->
+          <div class="assurance-modern-card">
+            <div>
+              <div class="assurance-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                </svg>
+              </div>
+              <span class="assurance-badge-tag">Zero-Risk Trial</span>
+              <h3 class="assurance-card-title">100-Night Home Trial</h3>
+              <p class="assurance-card-desc">Sleep risk-free in your own bedroom. If not completely delighted, we arrange free pickup for a full refund.</p>
+            </div>
+            <div class="assurance-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>100% Full Money-Back</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="assurance-modern-card">
+            <div>
+              <div class="assurance-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>
+                </svg>
+              </div>
+              <span class="assurance-badge-tag">Concierge Setup</span>
+              <h3 class="assurance-card-title">White-Glove Delivery</h3>
+              <p class="assurance-card-desc">Complimentary room-of-choice positioning, professional unboxing, and optional eco-friendly haul-away.</p>
+            </div>
+            <div class="assurance-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Free Old Bed Removal</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="assurance-modern-card">
+            <div>
+              <div class="assurance-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <span class="assurance-badge-tag">Manufacturer Warranty</span>
+              <h3 class="assurance-card-title">15-Year Coverage</h3>
+              <p class="assurance-card-desc">Non-prorated manufacturer warranty protecting against structural sagging, coil impressions, and core defects.</p>
+            </div>
+            <div class="assurance-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Non-Prorated Guarantee</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="assurance-modern-card">
+            <div>
+              <div class="assurance-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/>
+                </svg>
+              </div>
+              <span class="assurance-badge-tag">Flexible Financing</span>
+              <h3 class="assurance-card-title">0% APR Financing</h3>
+              <p class="assurance-card-desc">Tailored monthly plans up to 24 months with 0% interest, no hidden penalties, and instant pre-approval.</p>
+            </div>
+            <div class="assurance-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Instant Online Approval</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Footer Top Concierge & Trust Pillars Strip -->
+      <div class="footer-top-strip">
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">Artisanal Mastery</div>
+            <div class="footer-pillar-sub">Hand-tufted in European workshops</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">100-Night Trial</div>
+            <div class="footer-pillar-sub">100% risk-free in-home testing</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">White-Glove Setup</div>
+            <div class="footer-pillar-sub">Complimentary 2-person delivery</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">20-Year Guarantee</div>
+            <div class="footer-pillar-sub">Premier non-prorated warranty</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Main Grid -->
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">COMFORA</span>
+              <span class="brand-tagline">Luxury Sleep • EST. 1988</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Handcrafting European luxury sleep systems, botanical latex mattresses, and pure mulberry silk bedding since 1988.
+          </p>
+          <div class="footer-trust-badges">
+            <span class="footer-trust-pill">✓ OEKO-TEX® 100</span>
+            <span class="footer-trust-pill">✓ GOLS Organic Latex</span>
+            <span class="footer-trust-pill">✓ GOTS Certified</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.07-.98-.13-2.5.03-3.57.14-.98.93-6.33.93-6.33s-.24-.48-.24-1.18c0-1.11.64-1.94 1.45-1.94.68 0 1.01.51 1.01 1.13 0 .69-.44 1.72-.66 2.67-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.51 2.53-3.68 0-1.93-1.38-3.27-3.36-3.27-2.29 0-3.64 1.72-3.64 3.49 0 .69.27 1.43.6 1.83.07.08.08.15.06.23-.06.26-.2.83-.23.95-.04.15-.12.18-.28.11-1.04-.48-1.69-2-1.69-3.21 0-2.62 1.9-5.02 5.48-5.02 2.88 0 5.12 2.05 5.12 4.8 0 2.86-1.8 5.16-4.31 5.16-.84 0-1.63-.44-1.9-.96l-.52 1.97c-.19.72-.7 1.63-1.04 2.18A12 12 0 1 0 12 0z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="about.html" class="footer-link">Artisanal Story</a></li>
+            <li><a href="products.html" class="footer-link">Mattress Studio</a></li>
+            <li><a href="blog.html" class="footer-link">Sleep Journal</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">Trial &amp; Delivery</a></li>
+            <li><a href="contact.html" class="footer-link">Flagship Showrooms</a></li>
+          </ul>
+        </div>
+
+        <!-- Collections Col -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" class="footer-link">Celestial Hybrid <span class="tag-badge">Popular</span></a></li>
+            <li><a href="products.html" class="footer-link">Organic Latex</a></li>
+            <li><a href="products.html" class="footer-link">Zero-Gravity Memory</a></li>
+            <li><a href="products.html" class="footer-link">Orthocare Spinal Rest</a></li>
+            <li><a href="products.html" class="footer-link">Goose Down Pillows</a></li>
+            <li><a href="products.html" class="footer-link">Mulberry Silk Duvets</a></li>
+          </ul>
+        </div>
+
+        <!-- Client Care Col -->
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links">
+            <li><a href="trial-delivery.html" class="footer-link">100-Night Home Trial</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">White-Glove Setup</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">20-Year Warranty</a></li>
+            <li><a href="about.html" class="footer-link">Materials Provenance</a></li>
+            <li><a href="contact.html#showroomBookingSection" class="footer-link">Private Consultation</a></li>
+            <li><a href="contact.html" class="footer-link">Concierge: (212) 555-8920</a></li>
+          </ul>
+        </div>
+
+        <!-- VIP Sleep Gazette Card -->
+        <div>
+          <div class="footer-gazette-card">
+            <span class="footer-gazette-badge">✨ VIP Access</span>
+            <h4 class="footer-gazette-title">Join The Nocturne Circle</h4>
+            <p class="footer-gazette-desc">
+              Receive private preview invites, sleep ergonomics journals, and bespoke seasonal releases.
+            </p>
+            <form class="footer-newsletter-unified newsletter-form-trigger" onsubmit="event.preventDefault(); if(window.AuraCart){window.AuraCart.showToast('Subscribed to VIP Circle', 'Welcome to the Nocturne Circle.', 'success');}">
+              <input type="email" placeholder="Your email address..." required>
+              <button type="submit">Join →</button>
+            </form>
+            <div class="footer-gazette-privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>100% Private. Unsubscribe anytime.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>© 2026 COMFORA Luxury Sleep Studio Ltd. All rights reserved. Handcrafted European luxury.</div>
+        <div class="footer-bottom-links">
+          <a href="trial-delivery.html">Privacy Protocol</a>
+          <a href="trial-delivery.html">Terms of Service</a>
+          <a href="trial-delivery.html">100-Night Guarantee</a>
+          <a href="contact.html">Global Showrooms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Drawers & Modals -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title"><span>Shopping Bag</span><span class="drawer-count-badge cart-count-badge">0</span></div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeCartDrawer()">✕</button>
+    </div>
+    <div class="drawer-progress-box">
+      <div id="cartFreeShippingText">Add $1,000 to unlock Free White-Glove Setup.</div>
+      <div class="progress-track"><div class="progress-bar-fill" id="cartFreeShippingFill" style="width: 0%;"></div></div>
+    </div>
+    <div class="drawer-body" id="cartDrawerBody"></div>
+    <div class="drawer-footer">
+      <div class="cart-subtotal-row"><span>Subtotal:</span><span id="cartDrawerSubtotal">$0</span></div>
+      <button class="btn btn-primary btn-lg" id="cartCheckoutBtn" style="width: 100%;">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="wishlist-drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title"><span>Saved Wishlist</span><span class="drawer-count-badge wishlist-count-badge">0</span></div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeWishlistDrawer()">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody"></div>
+  </div>
+
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close modal" onclick="if(window.AuraProducts){AuraProducts.closeQuickView();}else{document.getElementById('quickViewModal').classList.remove('open');document.body.style.overflow='';}">✕</button>
+      <div id="quickViewModalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal-container search-modal-container">
+      <button class="modal-close-btn" id="searchModalClose">✕</button>
+      <span class="section-tag no-after">Search Collection</span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.45rem; margin-bottom: 1.25rem;">Search Mattresses &amp; Bedding</h3>
+      <div class="search-input-box">
+        <input type="text" id="globalSearchInput" placeholder="Search by type, size, or material...">
+      </div>
+      <div id="globalSearchResults" class="search-results-list"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

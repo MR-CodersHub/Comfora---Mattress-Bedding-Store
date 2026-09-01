@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMFORA | Luxury Mattress Studio & Handcrafted Sleep Bedding</title>
+  <meta name="description"
+    content="Discover COMFORA luxury handcrafted mattresses, botanical latex, ergonomic pocket spring systems, and pure silk bedding. Experience a 100-night risk-free in-home trial.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span>✨ <strong class="top-bar-highlight">100-Night Risk-Free In-Home Trial</strong> on All Mattresses</span>
+        <span>• Complimentary White-Glove In-Home Setup</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="trial-delivery.html" class="top-bar-link">Trial & Return Policy</a>
+        <span>•</span>
+        <a href="contact.html" class="top-bar-link">Flagship Showrooms</a>
+        <span>•</span>
+        <span class="top-bar-highlight">Concierge: +1 (212) 555-8920</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">COMFORA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="trial-delivery.html" class="nav-link">Trial & Delivery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+
+
+        <!-- Cart Trigger (Desktop only, hidden on mobile) -->
+        <button class="header-action-btn header-cart-btn" onclick="AuraCart.openCartDrawer()" aria-label="Shopping Bag"
+          title="Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+            <path d="M3 6h18" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="header-badge-count cart-count-badge">0</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="header-action-btn header-theme-toggle" onclick="AuraTheme.toggleTheme(event)"
+          aria-label="Toggle Theme" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        </button>
+
+        <!-- RTL Toggle -->
+        <button class="header-rtl-btn header-rtl-toggle" onclick="AuraTheme.toggleRTL(event)"
+          aria-label="Toggle Direction" title="Toggle RTL/LTR">
+          RTL
+        </button>
+
+        <a href="products.html" class="btn btn-primary btn-sm header-cta-btn">Shop Collection</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-text">
+        <span class="brand-name" style="font-size: 1.25rem;">COMFORA</span>
+      </div>
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">✕</button>
+    </div>
+
+    <!-- Mobile Cart Button in Drawer -->
+    <div class="mobile-drawer-cart-row">
+      <button class="mobile-drawer-cart-btn"
+        onclick="AuraCart.openCartDrawer(); document.getElementById('mobileNavClose').click();">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+          <path d="M3 6h18" />
+          <path d="M16 10a4 4 0 0 1-8 0" />
+        </svg>
+        <span>Shopping Bag (<strong class="cart-count-badge">0</strong>)</span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home <span>→</span></a>
+      <a href="home2.html" class="mobile-nav-link">Home 2 <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="products.html" class="mobile-nav-link">Mattresses &amp; Bedding <span>→</span></a>
+      <a href="blog.html" class="mobile-nav-link">Sleep Journal <span>→</span></a>
+      <a href="trial-delivery.html" class="mobile-nav-link">100-Night Trial &amp; Delivery <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Showrooms &amp; Contact <span>→</span></a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="products.html" class="btn btn-primary btn-block"
+        style="width: 100%; margin-bottom: 0.75rem; text-align: center;">Shop Collection</a>
+      <div style="font-size: 0.8125rem; color: var(--text-muted); text-align: center;">VIP Concierge: +1 (212) 555-8920
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN PAGE CONTENT (EXACTLY 8 SECTIONS) -->
+  <main id="mainContent">
+
+    <!-- SECTION 1: LUXURY HERO BANNER -->
+    <section class="hero-main" id="heroSection">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill-tag">
+            <span>✨</span> Handcrafted European Sleep Architecture
+          </div>
+          <h1 class="hero-title">
+            The Art of Deep, Restorative Sleep.
+          </h1>
+          <p class="hero-lead">
+            Engineered with certified organic botanical latex, individually pocketed titanium coils, and cashmere
+            hand-tufting for zero-pressure spinal alignment.
+          </p>
+
+          <div class="hero-btn-group">
+            <a href="products.html" class="btn btn-primary btn-lg">Explore Mattresses</a>
+            <a href="trial-delivery.html" class="btn btn-secondary btn-lg">100-Night Risk-Free Trial</a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div class="trust-text">
+                <strong>100-Night Home Trial</strong>
+                <span>100% Risk-Free Guarantee</span>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="16" height="13" x="4" y="5" rx="2" />
+                  <path d="M16 2v3" />
+                  <path d="M8 2v3" />
+                  <path d="M4 10h16" />
+                </svg>
+              </div>
+              <div class="trust-text">
+                <strong>15-Year Warranty</strong>
+                <span>Non-prorated assurance</span>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <div class="trust-text">
+                <strong>White-Glove Delivery</strong>
+                <span>Complimentary room setup</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="assets/images/hero_main.jpg" alt="COMFORA Masterpiece Mattress in Luxury Master Bedroom"
+              width="800" height="550">
+          </div>
+          <div class="floating-hero-card">
+            <div class="floating-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: var(--text-primary);">Sleep Ergonomics Award 2026
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-secondary);">Rated #1 for Lower Back Pain Relief</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FEATURED COLLECTIONS -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="featuredCollectionsSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Curated Sleep Suites</span>
+          <h2 class="section-title">Masterpiece Collections</h2>
+          <p class="section-desc">Each sleep suite is tailored to specific anatomical sleep profiles, from weightless
+            pressure relief to buoyant organic support.</p>
+        </div>
+
+        <div class="collections-grid">
+          <!-- Card 1 -->
+          <div class="collection-card">
+            <img src="assets/images/hero_editorial.jpg" alt="Pocket Spring Hybrid Collection" class="collection-bg-img">
+            <div class="collection-overlay"></div>
+            <div class="collection-content">
+              <span class="collection-count">01 • Flagship Hybrid</span>
+              <h3 class="collection-name">Pocket Spring Hybrid</h3>
+              <a href="products.html" class="collection-explore-link">Explore Collection →</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="collection-card">
+            <img src="assets/images/hero_main.jpg" alt="Botanical Organic Latex Collection" class="collection-bg-img">
+            <div class="collection-overlay"></div>
+            <div class="collection-content">
+              <span class="collection-count">02 • 100% Botanical</span>
+              <h3 class="collection-name">Natural Organic Latex</h3>
+              <a href="products.html" class="collection-explore-link">Explore Collection →</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="collection-card">
+            <img src="assets/images/anatomy_cutaway.jpg" alt="Zero-Gravity Memory Foam" class="collection-bg-img">
+            <div class="collection-overlay"></div>
+            <div class="collection-content">
+              <span class="collection-count">03 • Cooling Gel</span>
+              <h3 class="collection-name">Zero-Gravity Memory</h3>
+              <a href="products.html" class="collection-explore-link">Explore Collection →</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="collection-card">
+            <img src="assets/images/bedding_pillows.jpg" alt="Pillows & Silk Bedding Essentials"
+              class="collection-bg-img">
+            <div class="collection-overlay"></div>
+            <div class="collection-content">
+              <span class="collection-count">04 • Pure Silk & Linen</span>
+              <h3 class="collection-name">Bedding Essentials</h3>
+              <a href="products.html" class="collection-explore-link">Explore Collection →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TOP-SELLING MATTRESSES -->
+    <section class="section-padding" id="topSellingSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Most Coveted</span>
+          <h2 class="section-title">Top-Selling Mattresses</h2>
+          <p class="section-desc">Experience our highest-rated sleep surfaces, backed by thousands of 5-star verified
+            reviews and our 100-night trial.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+          <!-- Product Card 1 -->
+          <div class="product-card" data-product-id="mat-1">
+            <div class="product-card-media">
+              <img src="assets/images/The Celestial Grand Hybrid.jpg" alt="The Celestial Grand Hybrid">
+              <div class="product-badge-group">
+                <span class="product-badge badge-gold">Best Seller</span>
+                <span class="product-badge badge-discount">Save $350</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="card-action-btn" data-wishlist-id="mat-1" onclick="AuraCart.toggleWishlist('mat-1')"
+                  title="Save to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="quick-view-overlay">
+                <button class="btn btn-secondary btn-sm"
+                  onclick="if(window.AuraProducts){AuraProducts.openQuickView('mat-1')} else {window.location.href='products.html'}">Quick
+                  View</button>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-category-meta">
+                <span>Pocket Spring Hybrid</span>
+                <div class="product-rating">★ 4.9 <span>(342)</span></div>
+              </div>
+              <h3 class="product-card-title"><a href="products.html">The Celestial Grand Hybrid</a></h3>
+              <p class="product-card-desc">7-Zone individually pocketed titanium coils with cloud-like Belgian organic
+                latex and cashmere quilt.</p>
+
+              <div class="product-firmness">
+                <div class="firmness-header">
+                  <span>Firmness:</span>
+                  <span class="firmness-score">Medium Luxury (6.5/10)</span>
+                </div>
+                <div class="firmness-track">
+                  <div class="firmness-bar" style="width: 65%;"></div>
+                </div>
+              </div>
+
+              <div class="product-sizes-picker">
+                <button class="size-pill-btn active">Queen</button>
+                <button class="size-pill-btn">King</button>
+                <button class="size-pill-btn">Double</button>
+                <button class="size-pill-btn">Single</button>
+              </div>
+
+              <div class="product-card-footer">
+                <div class="product-price-box">
+                  <span class="price-current">$1,850</span>
+                  <span class="price-original">$2,200</span>
+                </div>
+                <button class="btn btn-primary card-add-cart-btn" onclick="AuraCart.addToCart('mat-1', 'Queen', 1)">Add
+                  to Bag</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card" data-product-id="mat-2">
+            <div class="product-card-media">
+              <img src="assets/images/hero_editorial.jpg" alt="Serenity Organic Natural Latex">
+              <div class="product-badge-group">
+                <span class="product-badge badge-trial">100% Organic</span>
+                <span class="product-badge badge-discount">Save $340</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="card-action-btn" data-wishlist-id="mat-2" onclick="AuraCart.toggleWishlist('mat-2')"
+                  title="Save to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="quick-view-overlay">
+                <button class="btn btn-secondary btn-sm"
+                  onclick="if(window.AuraProducts){AuraProducts.openQuickView('mat-2')} else {window.location.href='products.html'}">Quick
+                  View</button>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-category-meta">
+                <span>Natural Latex</span>
+                <div class="product-rating">★ 5.0 <span>(188)</span></div>
+              </div>
+              <h3 class="product-card-title"><a href="products.html">Serenity Organic Natural Latex</a></h3>
+              <p class="product-card-desc">Sustainably harvested botanical rubber tree latex offering buoyant
+                zero-gravity support and zero off-gassing.</p>
+
+              <div class="product-firmness">
+                <div class="firmness-header">
+                  <span>Firmness:</span>
+                  <span class="firmness-score">Gentle Plush (5.5/10)</span>
+                </div>
+                <div class="firmness-track">
+                  <div class="firmness-bar" style="width: 55%;"></div>
+                </div>
+              </div>
+
+              <div class="product-sizes-picker">
+                <button class="size-pill-btn active">Queen</button>
+                <button class="size-pill-btn">King</button>
+                <button class="size-pill-btn">Double</button>
+                <button class="size-pill-btn">Single</button>
+              </div>
+
+              <div class="product-card-footer">
+                <div class="product-price-box">
+                  <span class="price-current">$2,150</span>
+                  <span class="price-original">$2,490</span>
+                </div>
+                <button class="btn btn-primary card-add-cart-btn" onclick="AuraCart.addToCart('mat-2', 'Queen', 1)">Add
+                  to Bag</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card" data-product-id="mat-4">
+            <div class="product-card-media">
+              <img src="assets/images/Orthocare Spinal Rest Luxe.jpg" alt="Orthocare Spinal Rest Luxe">
+              <div class="product-badge-group">
+                <span class="product-badge badge-gold">Doctor Approved</span>
+                <span class="product-badge badge-discount">Save $370</span>
+              </div>
+              <div class="product-card-actions">
+                <button class="card-action-btn" data-wishlist-id="mat-4" onclick="AuraCart.toggleWishlist('mat-4')"
+                  title="Save to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                    <path
+                      d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="quick-view-overlay">
+                <button class="btn btn-secondary btn-sm"
+                  onclick="if(window.AuraProducts){AuraProducts.openQuickView('mat-4')} else {window.location.href='products.html'}">Quick
+                  View</button>
+              </div>
+            </div>
+            <div class="product-card-body">
+              <div class="product-category-meta">
+                <span>Orthopaedic Support</span>
+                <div class="product-rating">★ 4.9 <span>(410)</span></div>
+              </div>
+              <h3 class="product-card-title"><a href="products.html">Orthocare Spinal Rest Luxe</a></h3>
+              <p class="product-card-desc">Designed with orthopaedic chiropractors to alleviate lumbar tension and
+                maintain optimal spinal alignment.</p>
+
+              <div class="product-firmness">
+                <div class="firmness-header">
+                  <span>Firmness:</span>
+                  <span class="firmness-score">Firm Ergonomic (8.0/10)</span>
+                </div>
+                <div class="firmness-track">
+                  <div class="firmness-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="product-sizes-picker">
+                <button class="size-pill-btn active">Queen</button>
+                <button class="size-pill-btn">King</button>
+                <button class="size-pill-btn">Double</button>
+                <button class="size-pill-btn">Single</button>
+              </div>
+
+              <div class="product-card-footer">
+                <div class="product-price-box">
+                  <span class="price-current">$1,980</span>
+                  <span class="price-original">$2,350</span>
+                </div>
+                <button class="btn btn-primary card-add-cart-btn" onclick="AuraCart.addToCart('mat-4', 'Queen', 1)">Add
+                  to Bag</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="products.html" class="btn btn-outline btn-lg catalog-view-all-btn">View All 10 Mattresses &amp;
+            Bedding Suites →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SLEEP-HEALTH SCIENCE & BIOMECHANICAL ERGONOMICS -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="sleepHealthScienceSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Biomedical Sleep Architecture</span>
+          <h2 class="section-title">The Science of Restorative Sleep</h2>
+          <p class="section-desc">Developed in collaboration with European spinal orthopedic researchers to optimize
+            nocturnal posture, core temperature regulation, and deep restorative REM cycles.</p>
+        </div>
+
+        <div class="science-interactive-layout">
+          <!-- LEFT: 4 Science Innovation Cards -->
+          <div class="science-cards-col" id="scienceCardsCol">
+
+            <!-- Science 1 -->
+            <div class="science-feature-card active" data-science-target="spine"
+              onclick="AuraScience.selectCard(this, 'spine')">
+              <div class="science-card-top">
+                <div class="science-pill-index">01 • BIOMECHANICS</div>
+                <span class="science-metric-badge">99.4% Spinal Alignment</span>
+              </div>
+              <div class="science-card-header">
+                <div class="science-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                </div>
+                <h3 class="science-feature-title">Neutral Spine Decompression</h3>
+              </div>
+              <p class="science-feature-desc">
+                7-zone graduated resistance contours to your cervical, thoracic, and lumbar curvature, eliminating
+                spinal shear stress and reducing nocturnal toss-and-turn frequency by up to 64%.
+              </p>
+              <div class="science-feature-footer">
+                <span class="science-highlight-tag">7-Zone Dynamic Foam &amp; Latex</span>
+                <span class="science-status-indicator">Active Focus ➔</span>
+              </div>
+            </div>
+
+            <!-- Science 2 -->
+            <div class="science-feature-card" data-science-target="thermal"
+              onclick="AuraScience.selectCard(this, 'thermal')">
+              <div class="science-card-top">
+                <div class="science-pill-index">02 • THERMOREGULATION</div>
+                <span class="science-metric-badge">18.5°C Microclimate</span>
+              </div>
+              <div class="science-card-header">
+                <div class="science-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" />
+                  </svg>
+                </div>
+                <h3 class="science-feature-title">Phase-Change Microclimate</h3>
+              </div>
+              <p class="science-feature-desc">
+                Infused graphite crystal lattices and pin-core natural latex channel excess body heat away, facilitating
+                the vital 1.5°C core temperature drop required to initiate deep Stage 3 NREM sleep.
+              </p>
+              <div class="science-feature-footer">
+                <span class="science-highlight-tag">Graphite Open-Cell Structure</span>
+                <span class="science-status-indicator">Explore ➔</span>
+              </div>
+            </div>
+
+            <!-- Science 3 -->
+            <div class="science-feature-card" data-science-target="motion"
+              onclick="AuraScience.selectCard(this, 'motion')">
+              <div class="science-card-top">
+                <div class="science-pill-index">03 • MOTION ISOLATION</div>
+                <span class="science-metric-badge">99.8% Dampening Index</span>
+              </div>
+              <div class="science-card-header">
+                <div class="science-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                  </svg>
+                </div>
+                <h3 class="science-feature-title">Ultrasonic Zero Motion Transfer</h3>
+              </div>
+              <p class="science-feature-desc">
+                Up to 2,800 tempered titanium pocket coils are independently encased in ultrasonic spunbound sleeves,
+                isolating kinetic energy so a restless partner never interrupts your sleep cycle.
+              </p>
+              <div class="science-feature-footer">
+                <span class="science-highlight-tag">Titanium Barrel-Spring Array</span>
+                <span class="science-status-indicator">Explore ➔</span>
+              </div>
+            </div>
+
+            <!-- Science 4 -->
+            <div class="science-feature-card" data-science-target="purity"
+              onclick="AuraScience.selectCard(this, 'purity')">
+              <div class="science-card-top">
+                <div class="science-pill-index">04 • CLEAN BREATHING</div>
+                <span class="science-metric-badge">0.00% Toxic VOCs</span>
+              </div>
+              <div class="science-card-header">
+                <div class="science-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <h3 class="science-feature-title">Certified Bio-Purity Standards</h3>
+              </div>
+              <p class="science-feature-desc">
+                Crafted without chemical flame retardants, formaldehyde, heavy metals, or phthalates. Double-certified
+                by OEKO-TEX® Standard 100 and CertiPUR-US® for ultra-clean nocturnal breathing.
+              </p>
+              <div class="science-feature-footer">
+                <span class="science-highlight-tag">OEKO-TEX &amp; GOLS Certified</span>
+                <span class="science-status-indicator">Explore ➔</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: Interactive Biomedical Telemetry Display -->
+          <div class="science-visualizer-col">
+            <div class="science-visualizer-card">
+              <div class="science-telemetry-header">
+                <div class="telemetry-badge-live">
+                  <span class="pulse-dot"></span>
+                  <span>LIVE BIOMECHANICAL TELEMETRY</span>
+                </div>
+                <span class="telemetry-mode-tag" id="scienceCurrentModeText">Mode: 7-Zone Spine Alignment</span>
+              </div>
+
+              <!-- Visual Rendering Frame with Hotspot Markers -->
+              <div class="science-media-wrapper">
+                <img src="assets/images/science_spine_heatmap.jpg"
+                  alt="Biomechanical Spine Alignment and Pressure Relief Visualization" id="scienceVisualImage"
+                  class="science-hero-img">
+
+                <!-- Pulsing Hotspot Overlays -->
+                <div class="science-marker marker-cervical" title="Cervical Spine Harmony">
+                  <div class="marker-pulse"></div>
+                  <div class="marker-tooltip">
+                    <strong>Cervical Harmony</strong>
+                    <span>Gentle contouring preserves natural neck curve</span>
+                  </div>
+                </div>
+
+                <div class="science-marker marker-lumbar" title="Active Lumbar Bridge">
+                  <div class="marker-pulse"></div>
+                  <div class="marker-tooltip">
+                    <strong>Active Lumbar Bridge</strong>
+                    <span>High-resilience latex prevents lumbar sagging</span>
+                  </div>
+                </div>
+
+                <div class="science-marker marker-coils" title="Titanium Pocket Foundation">
+                  <div class="marker-pulse"></div>
+                  <div class="marker-tooltip">
+                    <strong>Dynamic Titanium Coils</strong>
+                    <span>Independent reactive body contouring</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clinical Metrics Telemetry Grid -->
+              <div class="science-telemetry-metrics-grid">
+                <div class="telemetry-stat-item">
+                  <div class="telemetry-stat-value">+48<span class="stat-unit">m</span></div>
+                  <div class="telemetry-stat-label">Deep REM Sleep / Night</div>
+                </div>
+                <div class="telemetry-stat-item">
+                  <div class="telemetry-stat-value">99.4<span class="stat-unit">%</span></div>
+                  <div class="telemetry-stat-label">Spine Decompression Index</div>
+                </div>
+                <div class="telemetry-stat-item">
+                  <div class="telemetry-stat-value">18.5<span class="stat-unit">°C</span></div>
+                  <div class="telemetry-stat-label">Thermal Microclimate</div>
+                </div>
+                <div class="telemetry-stat-item">
+                  <div class="telemetry-stat-value">0.00<span class="stat-unit">%</span></div>
+                  <div class="telemetry-stat-label">Chemical Off-Gassing</div>
+                </div>
+              </div>
+
+              <div class="science-citation-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span>Biomedical findings validated by the Zurich Ergonomics Sleep Laboratory &amp; Global Sleep Health
+                  Institute.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: 5-LAYER INTERACTIVE MATTRESS ANATOMY -->
+    <section class="section-padding" id="mattressTechnologySection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineering Excellence</span>
+          <h2 class="section-title">Anatomy of the Perfect Mattress</h2>
+          <p class="section-desc">Explore the 5 specialized layers engineered to work in harmony for optimal spinal
+            decompression and temperature neutrality.</p>
+        </div>
+
+        <div class="anatomy-card-shell">
+          <!-- Interactive Layer Tabs -->
+          <div class="anatomy-tabs-nav" id="anatomyTabsNav">
+            <button class="anatomy-tab-btn active" data-layer-index="0" onclick="AuraAnatomy.selectLayer(0)">
+              <span class="anatomy-tab-num">1</span>
+              <span>Organic Cashmere Top</span>
+            </button>
+            <button class="anatomy-tab-btn" data-layer-index="1" onclick="AuraAnatomy.selectLayer(1)">
+              <span class="anatomy-tab-num">2</span>
+              <span>Cooling Gel Foam</span>
+            </button>
+            <button class="anatomy-tab-btn" data-layer-index="2" onclick="AuraAnatomy.selectLayer(2)">
+              <span class="anatomy-tab-num">3</span>
+              <span>Botanical Latex</span>
+            </button>
+            <button class="anatomy-tab-btn" data-layer-index="3" onclick="AuraAnatomy.selectLayer(3)">
+              <span class="anatomy-tab-num">4</span>
+              <span>1,600 Pocket Coils</span>
+            </button>
+            <button class="anatomy-tab-btn" data-layer-index="4" onclick="AuraAnatomy.selectLayer(4)">
+              <span class="anatomy-tab-num">5</span>
+              <span>Ortho Base Support</span>
+            </button>
+          </div>
+
+          <!-- Main Anatomy Stage -->
+          <div class="anatomy-grid-main">
+            <div class="anatomy-image-wrap">
+              <img src="assets/images/anatomy_cutaway.jpg" alt="5-Layer Internal Mattress Anatomy Cross-Section"
+                id="anatomyMainImage">
+            </div>
+
+            <!-- Spotlight Box -->
+            <div class="anatomy-spotlight-box" id="anatomySpotlightBox">
+              <div>
+                <div class="spotlight-header">
+                  <span class="spotlight-badge" id="spotlightBadge">Layer 1 of 5 • Surface Comfort</span>
+                  <span class="spotlight-layer-num" id="spotlightNum">01</span>
+                </div>
+                <h3 class="spotlight-title" id="spotlightTitle">Organic Cashmere &amp; Belgian Damask Top</h3>
+                <p class="spotlight-desc" id="spotlightDesc">
+                  Hand-quilted with pure organic wool and natural cashmere rosettes. Naturally wicks moisture,
+                  dissipates heat, and creates a soft, cloud-like initial touch with zero synthetic chemicals.
+                </p>
+              </div>
+
+              <div>
+                <div class="spotlight-specs-row">
+                  <div class="spotlight-spec-col">
+                    <span class="spec-val" id="spotlightSpec1">1.5 Inches</span>
+                    <span class="spec-lbl" id="spotlightLabel1">Thickness</span>
+                  </div>
+                  <div class="spotlight-spec-col">
+                    <span class="spec-val" id="spotlightSpec2">OEKO-TEX</span>
+                    <span class="spec-lbl" id="spotlightLabel2">Certified</span>
+                  </div>
+                  <div class="spotlight-spec-col">
+                    <span class="spec-val" id="spotlightSpec3">100% Organic</span>
+                    <span class="spec-lbl" id="spotlightLabel3">Material</span>
+                  </div>
+                </div>
+
+                <div class="spotlight-nav-actions">
+                  <button class="layer-nav-prev" onclick="AuraAnatomy.prevLayer()">← Previous Layer</button>
+                  <a href="products.html" class="btn btn-primary btn-sm">Shop This Model</a>
+                  <button class="layer-nav-next" onclick="AuraAnatomy.nextLayer()">Next Layer →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CUSTOMER TESTIMONIALS & REVIEWS -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="testimonialsSection">
+      <div class="container">
+        <div class="testimonials-bubble-arena">
+          <!-- Decorative Background Elements -->
+          <div class="bubble-bg-circle-1"></div>
+          <div class="bubble-bg-circle-2"></div>
+          <div class="bubble-bg-dot-1"></div>
+          <div class="bubble-bg-dot-2"></div>
+
+          <div class="section-header" style="margin-bottom: 3.5rem;">
+            <span class="section-tag">Verified Sleep Experiences</span>
+            <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 2.75rem); color: #2C3E50;">Customer Reviews
+            </h2>
+          </div>
+
+          <div class="testimonials-bubble-grid">
+            <!-- Review 1 -->
+            <div class="speech-bubble-card">
+              <div class="bubble-avatar-wrap">
+                <img src="assets/images/craftsmanship.jpg" alt="Ayesha R.">
+              </div>
+              <div class="bubble-author-name">— Ayesha R., Dubai</div>
+              <div class="bubble-rating-stars">★★★★★</div>
+              <p class="bubble-quote-text">
+                "COMFORA transformed every aspect of our sleep before our big move. Spotless white-glove setup and
+                pure botanical comfort. Truly five-star work, very professional!"
+              </p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="speech-bubble-card">
+              <div class="bubble-avatar-wrap">
+                <img src="assets/images/hero_main.jpg" alt="Zubair K.">
+              </div>
+              <div class="bubble-author-name">— Zubair K., Sharjah</div>
+              <div class="bubble-rating-stars">★★★★★</div>
+              <p class="bubble-quote-text">
+                "Quick, safe, and effective back pain relief! The organic latex core eliminated morning stiffness
+                immediately. No more restless tossing and turning in our bedroom."
+              </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="speech-bubble-card">
+              <div class="bubble-avatar-wrap">
+                <img src="assets/images/hero_editorial.jpg" alt="Sara M.">
+              </div>
+              <div class="bubble-author-name">— Sara M., Abu Dhabi</div>
+              <div class="bubble-rating-stars">★★★★★</div>
+              <p class="bubble-quote-text">
+                "Smoothest mattress delivery ever! Everything was packaged in protective organic cotton canvas and
+                arrived damage-free. The silk bedding feels heavenly."
+              </p>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="speech-bubble-card">
+              <div class="bubble-avatar-wrap">
+                <img src="assets/images/bedding_pillows.jpg" alt="Imran H.">
+              </div>
+              <div class="bubble-author-name">— Imran H., Ajman</div>
+              <div class="bubble-rating-stars">★★★★★</div>
+              <p class="bubble-quote-text">
+                "Sleep feels brand new again. Breathable temperature control keeps our bed fresh and cool through hot
+                humid nights. Highly recommended to everyone!"
+              </p>
+            </div>
+          </div>
+
+          <div class="bubble-brand-footer">
+            <span>www.comfora-sleep.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PROMOTIONAL & 100-NIGHT RISK-FREE TRIAL OFFER -->
+    <section class="section-padding" id="promotionalTrialSection">
+      <div class="container">
+        <div class="promo-banner">
+          <div class="promo-grid">
+            <div>
+              <span class="section-tag no-after" style="color: var(--accent-gold);">Limited Studio Offer</span>
+              <h2 class="promo-title">100-Night Sleep Trial + $300 Bedding Gift Pack</h2>
+              <p class="promo-desc">
+                Order any mattress today and receive a complimentary Luxury Organic Down Pillow Pair &amp; French Linen
+                Sheet Set ($300 value) included with free white-glove setup.
+              </p>
+
+              <div class="promo-perks-list">
+                <div class="promo-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>100-Night Risk-Free In-Home Sleep Trial</span>
+                </div>
+                <div class="promo-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Complimentary White-Glove In-Home Delivery &amp; Removal</span>
+                </div>
+                <div class="promo-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>0% APR Financing for up to 24 Months</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="products.html" class="btn btn-primary btn-lg">Claim Seasonal Gift Offer</a>
+                <a href="trial-delivery.html" class="btn btn-outline-gold btn-lg">Trial &amp; Return Terms</a>
+              </div>
+            </div>
+
+            <!-- Countdown Box -->
+            <div class="countdown-box">
+              <div
+                style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-gold);">
+                Offer Concludes In</div>
+              <div class="countdown-digits">
+                <div class="digit-card">
+                  <div class="digit-val" id="promoDays">04</div>
+                  <div class="digit-lbl">Days</div>
+                </div>
+                <div class="digit-card">
+                  <div class="digit-val" id="promoHours">14</div>
+                  <div class="digit-lbl">Hours</div>
+                </div>
+                <div class="digit-card">
+                  <div class="digit-val" id="promoMins">32</div>
+                  <div class="digit-lbl">Mins</div>
+                </div>
+                <div class="digit-card">
+                  <div class="digit-val" id="promoSecs">45</div>
+                  <div class="digit-lbl">Secs</div>
+                </div>
+              </div>
+              <div style="margin-top: 1.5rem; font-size: 0.75rem; color: var(--text-inverse-muted);">*Gift pack
+                automatically applied at checkout with any mattress purchase.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FINAL CALL TO ACTION & VIP SLEEP CLUB -->
+    <section class="section-padding-sm"
+      style="background-color: var(--bg-card); border-top: 1px solid var(--border-light);" id="finalCtaSection">
+      <div class="container">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+          <span class="section-tag">COMFORA Studio</span>
+          <h2 class="section-title">Ready for the Best Sleep of Your Life?</h2>
+          <p class="section-desc" style="margin-bottom: 2rem;">
+            Join our VIP Luxury Sleep for private showroom bookings, bespoke tailoring consultations, and an exclusive
+            15% welcome perk on luxury bedding.
+          </p>
+
+          <form class="newsletter-form-trigger"
+            style="display: flex; gap: 0.75rem; max-width: 520px; margin: 0 auto 1.5rem auto;">
+            <input type="email" placeholder="Enter your email address..." required
+              style="flex-grow: 1; padding: 0.95rem 1.4rem; background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: var(--radius-full); font-size: 0.925rem;">
+            <button type="submit" class="btn btn-primary">Join VIP Club</button>
+          </form>
+
+          <div
+            style="display: flex; justify-content: center; gap: 2rem; font-size: 0.85rem; color: var(--text-muted); flex-wrap: wrap;">
+            <span>✓ No spam guarantee</span>
+            <span>✓ Exclusive private showroom access</span>
+            <span>✓ VIP Sleep Specialist Hotline</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Footer Top Concierge & Trust Pillars Strip -->
+      <div class="footer-top-strip">
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">Artisanal Mastery</div>
+            <div class="footer-pillar-sub">Hand-tufted in European workshops</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">100-Night Trial</div>
+            <div class="footer-pillar-sub">100% risk-free in-home testing</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">White-Glove Setup</div>
+            <div class="footer-pillar-sub">Complimentary 2-person delivery</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">20-Year Guarantee</div>
+            <div class="footer-pillar-sub">Premier non-prorated warranty</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Main Grid -->
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">COMFORA</span>
+              <span class="brand-tagline">Luxury Sleep • EST. 1988</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Handcrafting European luxury sleep systems, botanical latex mattresses, and pure mulberry silk bedding since
+            1988.
+          </p>
+          <div class="footer-trust-badges">
+            <span class="footer-trust-pill">✓ OEKO-TEX® 100</span>
+            <span class="footer-trust-pill">✓ GOLS Organic Latex</span>
+            <span class="footer-trust-pill">✓ GOTS Certified</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0a12 12 0 0 0-4.37 23.18c-.07-.98-.13-2.5.03-3.57.14-.98.93-6.33.93-6.33s-.24-.48-.24-1.18c0-1.11.64-1.94 1.45-1.94.68 0 1.01.51 1.01 1.13 0 .69-.44 1.72-.66 2.67-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.51 2.53-3.68 0-1.93-1.38-3.27-3.36-3.27-2.29 0-3.64 1.72-3.64 3.49 0 .69.27 1.43.6 1.83.07.08.08.15.06.23-.06.26-.2.83-.23.95-.04.15-.12.18-.28.11-1.04-.48-1.69-2-1.69-3.21 0-2.62 1.9-5.02 5.48-5.02 2.88 0 5.12 2.05 5.12 4.8 0 2.86-1.8 5.16-4.31 5.16-.84 0-1.63-.44-1.9-.96l-.52 1.97c-.19.72-.7 1.63-1.04 2.18A12 12 0 1 0 12 0z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="about.html" class="footer-link">Artisanal Story</a></li>
+            <li><a href="products.html" class="footer-link">Mattress Studio</a></li>
+            <li><a href="blog.html" class="footer-link">Sleep Journal</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">Trial &amp; Delivery</a></li>
+            <li><a href="contact.html" class="footer-link">Flagship Showrooms</a></li>
+          </ul>
+        </div>
+
+        <!-- Collections Col -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" class="footer-link">Celestial Hybrid <span class="tag-badge">Popular</span></a>
+            </li>
+            <li><a href="products.html" class="footer-link">Organic Latex</a></li>
+            <li><a href="products.html" class="footer-link">Zero-Gravity Memory</a></li>
+            <li><a href="products.html" class="footer-link">Orthocare Spinal Rest</a></li>
+            <li><a href="products.html" class="footer-link">Goose Down Pillows</a></li>
+            <li><a href="products.html" class="footer-link">Mulberry Silk Duvets</a></li>
+          </ul>
+        </div>
+
+        <!-- Client Care Col -->
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links">
+            <li><a href="trial-delivery.html" class="footer-link">100-Night Home Trial</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">White-Glove Setup</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">20-Year Warranty</a></li>
+            <li><a href="about.html" class="footer-link">Materials Provenance</a></li>
+            <li><a href="contact.html#showroomBookingSection" class="footer-link">Private Consultation</a></li>
+            <li><a href="contact.html" class="footer-link">Concierge: (212) 555-8920</a></li>
+          </ul>
+        </div>
+
+        <!-- VIP Sleep Gazette Card -->
+        <div>
+          <div class="footer-gazette-card">
+            <span class="footer-gazette-badge">✨ VIP Access</span>
+            <h4 class="footer-gazette-title">Join The Nocturne Circle</h4>
+            <p class="footer-gazette-desc">
+              Receive private preview invites, sleep ergonomics journals, and bespoke seasonal releases.
+            </p>
+            <form class="footer-newsletter-unified newsletter-form-trigger"
+              onsubmit="event.preventDefault(); if(window.AuraCart){window.AuraCart.showToast('Subscribed to VIP Circle', 'Welcome to the Nocturne Circle.', 'success');}">
+              <input type="email" placeholder="Your email address..." required>
+              <button type="submit">Join →</button>
+            </form>
+            <div class="footer-gazette-privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <span>100% Private. Unsubscribe anytime.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>© 2026 COMFORA Luxury Sleep Studio Ltd. All rights reserved. Handcrafted European luxury.</div>
+        <div class="footer-bottom-links">
+          <a href="trial-delivery.html">Privacy Protocol</a>
+          <a href="trial-delivery.html">Terms of Service</a>
+          <a href="trial-delivery.html">100-Night Guarantee</a>
+          <a href="contact.html">Global Showrooms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Out Shopping Bag Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <span>Shopping Bag</span>
+        <span class="drawer-count-badge cart-count-badge">0</span>
+      </div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeCartDrawer()" aria-label="Close Shopping Bag">✕</button>
+    </div>
+
+    <!-- Free Delivery Progress -->
+    <div class="drawer-progress-box">
+      <div id="cartFreeShippingText">Add $1,000 to unlock Complimentary White-Glove In-Home Setup.</div>
+      <div class="progress-track">
+        <div class="progress-bar-fill" id="cartFreeShippingFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <div class="drawer-body" id="cartDrawerBody">
+      <!-- Injected dynamically by cart.js -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal:</span>
+        <span id="cartDrawerSubtotal">$0</span>
+      </div>
+      <button class="btn btn-primary btn-lg" id="cartCheckoutBtn" style="width: 100%;">Proceed to Checkout</button>
+      <div class="cart-guarantee-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <span>100-Night Trial &amp; Free White-Glove Delivery</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer -->
+  <div class="wishlist-drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <span>Saved Wishlist</span>
+        <span class="drawer-count-badge wishlist-count-badge">0</span>
+      </div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeWishlistDrawer()" aria-label="Close Wishlist">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody">
+      <!-- Injected dynamically by cart.js -->
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close modal"
+        onclick="if(window.AuraProducts){AuraProducts.closeQuickView();}else{document.getElementById('quickViewModal').classList.remove('open');document.body.style.overflow='';}">✕</button>
+      <div id="quickViewModalContent">
+        <!-- Injected dynamically by products.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Quick Search Modal -->
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal-container search-modal-container">
+      <button class="modal-close-btn" id="searchModalClose">✕</button>
+      <span class="section-tag no-after">Search Collection</span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.45rem; margin-bottom: 1.25rem;">Search Mattresses &amp;
+        Bedding</h3>
+
+      <div class="search-input-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input type="text" id="globalSearchInput"
+          placeholder="Search by type (Hybrid, Latex, Orthopaedic), size, or material...">
+      </div>
+
+      <div id="globalSearchResults" class="search-results-list">
+        <div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">
+          Type any keyword to search across our luxury mattress collection and sleep health guides.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

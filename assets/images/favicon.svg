@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2CAAA" />
+      <stop offset="50%" stop-color="#C2A177" />
+      <stop offset="100%" stop-color="#8C6A48" />
+    </linearGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#251B14" />
+      <stop offset="100%" stop-color="#140E0A" />
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" stroke="#C2A177" stroke-width="2" stroke-opacity="0.4"/>
+  <!-- Elegant crescent moon emblem for Comfora Luxury Sleep -->
+  <path d="M36 14 C23.85 14 14 23.85 14 36 C14 48.15 23.85 58 36 58 C41.4 58 46.36 56.05 50.2 52.8 C37.8 51.5 28 41 28 28 C28 22.3 30 17.1 33.4 13 C34.2 13.3 35.1 13.6 36 14 Z" fill="url(#goldGrad)" />
+  <circle cx="44" cy="22" r="3" fill="#E2CAAA" opacity="0.9"/>
+</svg>

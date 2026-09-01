@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100-Night Risk-Free Trial &amp; White-Glove Delivery | COMFORA</title>
+  <meta name="description" content="Discover COMFORA's 100-night in-home mattress trial, transparent return policy, and complimentary white-glove delivery and room setup.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span>✨ <strong class="top-bar-highlight">100-Night Risk-Free In-Home Trial</strong> On All Mattresses</span>
+        <span>• Complimentary White-Glove In-Home Setup</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="trial-delivery.html" class="top-bar-link">Trial &amp; Return Policy</a>
+        <span>•</span>
+        <a href="contact.html" class="top-bar-link">Flagship Showrooms</a>
+        <span>•</span>
+        <span class="top-bar-highlight">Concierge: +1 (212) 555-8920</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">COMFORA</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="trial-delivery.html" class="nav-link active">Trial & Delivery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-action-btn header-cart-btn" onclick="AuraCart.openCartDrawer()" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="header-badge-count cart-count-badge">0</span></button>
+        <button class="header-action-btn header-theme-toggle" onclick="AuraTheme.toggleTheme(event)" aria-label="Toggle Theme" title="Toggle Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button class="header-rtl-btn header-rtl-toggle" onclick="AuraTheme.toggleRTL(event)" aria-label="Toggle Direction" title="Toggle RTL/LTR">RTL</button>
+        <a href="products.html" class="btn btn-primary btn-sm header-cta-btn">Shop Collection</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-text"><span class="brand-name" style="font-size: 1.25rem;">COMFORA</span></div>
+      <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+    </div>
+
+    <!-- Mobile Cart Button in Drawer -->
+    <div class="mobile-drawer-cart-row">
+      <button class="mobile-drawer-cart-btn" onclick="AuraCart.openCartDrawer(); document.getElementById('mobileNavClose').click();">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>Shopping Bag (<strong class="cart-count-badge">0</strong>)</span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="home2.html" class="mobile-nav-link">Home 2 <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="products.html" class="mobile-nav-link">Mattresses &amp; Bedding <span>→</span></a>
+      <a href="blog.html" class="mobile-nav-link">Sleep Journal <span>→</span></a>
+      <a href="trial-delivery.html" class="mobile-nav-link active">100-Night Trial &amp; Delivery <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Showrooms &amp; Contact <span>→</span></a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="products.html" class="btn btn-primary btn-block" style="width: 100%; margin-bottom: 0.75rem; text-align: center;">Shop Collection</a>
+      <div style="font-size: 0.8125rem; color: var(--text-muted); text-align: center;">VIP Concierge: +1 (212) 555-8920</div>
+    </div>
+  </aside>
+
+  <!-- MAIN PAGE CONTENT (EXACTLY 6 SECTIONS) -->
+  <main id="mainContent">
+
+    <!-- SECTION 1: TRIAL & DELIVERY HERO BANNER -->
+    <section class="section-padding" style="background: radial-gradient(circle at 75% 25%, #FAF2E6 0%, #FAF7F2 60%);" id="trialDeliveryHeroSection">
+      <div class="container">
+        <div class="grid-split-2col">
+          <div>
+            <span class="section-tag no-after">Sleep with Absolute Peace of Mind</span>
+            <h1 class="section-title" style="font-size: clamp(1.85rem, 2.8vw, 2.5rem); margin-bottom: 1rem;">
+              100 Nights in Your Bedroom. Zero Risk.
+            </h1>
+            <p class="hero-lead">
+              A 10-minute showroom test cannot compare to real nights of sleep. Experience your COMFORA mattress in your own bedroom for 100 nights with complimentary white-glove setup and free returns.
+            </p>
+
+            <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+              <a href="products.html" class="btn btn-primary btn-lg">Explore Trial Mattresses</a>
+              <a href="#trialFaqSection" class="btn btn-secondary btn-lg">Read FAQs</a>
+            </div>
+          </div>
+
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); border: 1px solid var(--border-subtle);">
+            <img src="assets/images/hero_main.jpg" alt="100-Night Risk-Free In-Home Mattress Trial in Beautiful Bedroom">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 4-STEP HOME TRIAL JOURNEY -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="homeTrialProcessSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Step-by-Step Experience</span>
+          <h2 class="section-title">How the 100-Night Trial Works</h2>
+          <p class="section-desc">From white-glove concierge delivery to restorative sleep, our in-home trial is transparent and seamless.</p>
+        </div>
+
+        <div class="trial-steps-modern-grid">
+          <!-- Step 1 -->
+          <div class="trial-step-card-modern">
+            <div class="trial-step-header">
+              <span class="trial-step-badge">Step 01</span>
+              <span class="trial-step-phase">Concierge Setup</span>
+            </div>
+            <div class="trial-step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>
+              </svg>
+            </div>
+            <h3 class="trial-step-title">White-Glove Setup</h3>
+            <p class="trial-step-desc">Our two-person specialist crew delivers directly to your bedroom of choice, unboxes, and positions your mattress with optional old bed haul-away.</p>
+            <div class="trial-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Free Old Bed Removal</span>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="trial-step-card-modern">
+            <div class="trial-step-header">
+              <span class="trial-step-badge">Step 02</span>
+              <span class="trial-step-phase">Adaptation</span>
+            </div>
+            <div class="trial-step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/>
+              </svg>
+            </div>
+            <h3 class="trial-step-title">30-Day Break-In</h3>
+            <p class="trial-step-desc">Postural muscles and lumbar ligaments require 3 to 4 weeks to unlearn past sagging patterns and fully adapt to neutral vertebral alignment.</p>
+            <div class="trial-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>30-Day Sleep Adaptation</span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="trial-step-card-modern">
+            <div class="trial-step-header">
+              <span class="trial-step-badge">Step 03</span>
+              <span class="trial-step-phase">Sanctuary Test</span>
+            </div>
+            <div class="trial-step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+              </svg>
+            </div>
+            <h3 class="trial-step-title">100 Nights of Rest</h3>
+            <p class="trial-step-desc">Evaluate the contouring botanical latex, motion isolation, and cooling silk microclimate across real nightly conditions in your own home.</p>
+            <div class="trial-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>100 Full Calendar Nights</span>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="trial-step-card-modern">
+            <div class="trial-step-header">
+              <span class="trial-step-badge">Step 04</span>
+              <span class="trial-step-phase">Resolution</span>
+            </div>
+            <div class="trial-step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="trial-step-title">Love It or Full Refund</h3>
+            <p class="trial-step-desc">If you are not completely delighted, our sleep concierge coordinates seamless pickup directly from your bedroom with a 100% money-back refund.</p>
+            <div class="trial-perk-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>100% Money-Back Guarantee</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TRIAL ELIGIBILITY & RETURN / EXCHANGE POLICY -->
+    <section class="section-padding" id="trialPolicyDetailsSection">
+      <div class="container">
+        <div class="policy-modern-shell">
+          <div>
+            <span class="section-tag no-after">Transparent Honor System</span>
+            <h2 class="section-title" style="font-size: clamp(1.85rem, 2.8vw, 2.5rem); margin-bottom: 0.75rem;">Fair &amp; Transparent Return Policy</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              We eliminate hidden clauses and complicated return hurdles so you can invest in your sleep health with total confidence.
+            </p>
+
+            <div class="policy-features-list">
+              <div class="policy-feature-item">
+                <div class="policy-feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                </div>
+                <div>
+                  <div class="policy-feature-title">Zero Restocking &amp; Handling Fees</div>
+                  <p class="policy-feature-text">We never deduct repackaging, restocking, or inspection fees. Your refund is 100% complete.</p>
+                </div>
+              </div>
+
+              <div class="policy-feature-item">
+                <div class="policy-feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+                </div>
+                <div>
+                  <div class="policy-feature-title">Complimentary Comfort Exchange</div>
+                  <p class="policy-feature-text">Need a firmer or plusher score? Exchange to another model within 100 nights with zero freight fees.</p>
+                </div>
+              </div>
+
+              <div class="policy-feature-item">
+                <div class="policy-feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                </div>
+                <div>
+                  <div class="policy-feature-title">Charitable Shelter Donations</div>
+                  <p class="policy-feature-text">Returned mattresses are never restocked; they are thoroughly sanitized and donated to regional charities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="policy-checklist-card">
+            <h3 class="policy-checklist-heading">Trial Verification Protocol</h3>
+            <div class="policy-checklist-sub">Quality Standards</div>
+            <ul class="policy-checklist-items">
+              <li>
+                <div class="policy-check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <span><strong>Direct Order Provenance:</strong> Purchased through COMFORA online or an authorized workshop flagship.</span>
+              </li>
+              <li>
+                <div class="policy-check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <span><strong>30-Night Adaptation Window:</strong> Minimum 30 nights completed to allow spinal postural realignment.</span>
+              </li>
+              <li>
+                <div class="policy-check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <span><strong>Clean Condition:</strong> Structural integrity preserved without heavy stains or fabric tears.</span>
+              </li>
+              <li>
+                <div class="policy-check-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <span><strong>100 Calendar Days:</strong> Initiated within 100 days from confirmed white-glove delivery date.</span>
+              </li>
+            </ul>
+            <div class="policy-concierge-footer">
+              <span>Initiate Exchange / Return:</span>
+              <strong style="color: var(--accent-bronze);">returns@comfora-sleep.com</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: WHITE-GLOVE DELIVERY & ROOM SETUP -->
+    <section class="section-padding" style="background-color: var(--bg-card-alt);" id="whiteGloveDeliverySection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Complimentary Concierge Service</span>
+          <h2 class="section-title">White-Glove Delivery &amp; Setup</h2>
+          <p class="section-desc">We take care of every detail so you can step straight into restorative sleep.</p>
+        </div>
+
+        <div class="grid-equal-3col">
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background-color: var(--accent-gold-light); color: var(--accent-bronze); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.5rem;">Room of Choice Setup</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">Our professional delivery team navigates stairwells, unboxes the mattress, and positions it precisely on your bed frame.</p>
+          </div>
+
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background-color: var(--accent-gold-light); color: var(--accent-bronze); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.5rem;">Old Mattress Removal</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">Select old mattress haul-away at checkout. We responsibly recycle the steel springs and donate usable materials.</p>
+          </div>
+
+          <div style="background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.25rem; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
+            <div style="width: 52px; height: 52px; border-radius: 50%; background-color: var(--accent-gold-light); color: var(--accent-bronze); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            </div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 0.5rem;">Scheduled 2-Hour Window</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65;">No waiting around all day. Choose your preferred delivery date and receive live SMS tracking on delivery morning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: TRIAL & DELIVERY FAQ ACCORDION -->
+    <section class="section-padding" id="trialFaqSection">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Common Trial &amp; Delivery Inquiries</h2>
+          <p class="section-desc">Everything you need to know about testing, returning, and receiving your mattress.</p>
+        </div>
+
+        <div class="accordion-list">
+          <div class="accordion-item active">
+            <button class="accordion-header">
+              <span>Why is there a mandatory 30-night break-in period?</span>
+              <span class="accordion-icon">↓</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Just like a custom pair of bespoke leather shoes, your body requires time to decompress and adapt to proper anatomical spinal alignment. Over decades on sagging mattresses, posture muscles develop compensations that take approximately 21 to 30 days to gently re-align.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How do I arrange a return or comfort exchange?</span>
+              <span class="accordion-icon">↓</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Simply email concierge@auraluna-sleep.com or call +1 (212) 555-8920. Our concierge will coordinate a convenient pickup date with our local courier team. Once picked up, your 100% refund is issued to your original payment method within 3 business days.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Are returned mattresses ever repackaged or resold?</span>
+              <span class="accordion-icon">↓</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Never. Every COMFORA mattress delivered to our clients is 100% brand new, crafted fresh in our European workshops. Returned mattresses are donated to vetted non-profit community shelters or broken down for eco-friendly material recycling.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Is white-glove delivery really complimentary?</span>
+              <span class="accordion-icon">↓</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes! White-glove in-home setup and old mattress removal are complimentary on all mattress purchases within the contiguous United States, United Kingdom, and metropolitan Australia.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>What mattress bases and frames are compatible?</span>
+              <span class="accordion-icon">↓</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Our hybrid, botanical latex, and orthopaedic mattresses perform on platform beds, solid slatted bases (slats no more than 3 inches apart), adjustable ergonomic bed bases, and traditional box springs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: FINAL RISK-FREE TRIAL CTA -->
+    <section class="section-padding-sm" style="background: var(--bg-dark); color: #FFFFFF;" id="trialFinalCtaSection">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <span class="section-tag no-after" style="color: var(--accent-gold);">Start Your 100 Nights Tonight</span>
+          <h2 class="section-title" style="color: #FFFFFF;">Experience Restorative Sleep Risk-Free</h2>
+          <p style="color: var(--text-inverse-muted); margin-bottom: 2rem; font-size: 1.05rem;">
+            Order your bespoke mattress today with free white-glove setup and 100 nights to fall in love.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+            <a href="products.html" class="btn btn-primary btn-lg">Explore All Mattresses</a>
+            <a href="contact.html" class="btn btn-outline-gold btn-lg">Book Showroom Visit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Footer Top Concierge & Trust Pillars Strip -->
+      <div class="footer-top-strip">
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">Artisanal Mastery</div>
+            <div class="footer-pillar-sub">Hand-tufted in European workshops</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">100-Night Trial</div>
+            <div class="footer-pillar-sub">100% risk-free in-home testing</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">White-Glove Setup</div>
+            <div class="footer-pillar-sub">Complimentary 2-person delivery</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">20-Year Guarantee</div>
+            <div class="footer-pillar-sub">Premier non-prorated warranty</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Main Grid -->
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">COMFORA</span>
+              <span class="brand-tagline">Luxury Sleep • EST. 1988</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Handcrafting European luxury sleep systems, botanical latex mattresses, and pure mulberry silk bedding since 1988.
+          </p>
+          <div class="footer-trust-badges">
+            <span class="footer-trust-pill">✓ OEKO-TEX® 100</span>
+            <span class="footer-trust-pill">✓ GOLS Organic Latex</span>
+            <span class="footer-trust-pill">✓ GOTS Certified</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.07-.98-.13-2.5.03-3.57.14-.98.93-6.33.93-6.33s-.24-.48-.24-1.18c0-1.11.64-1.94 1.45-1.94.68 0 1.01.51 1.01 1.13 0 .69-.44 1.72-.66 2.67-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.51 2.53-3.68 0-1.93-1.38-3.27-3.36-3.27-2.29 0-3.64 1.72-3.64 3.49 0 .69.27 1.43.6 1.83.07.08.08.15.06.23-.06.26-.2.83-.23.95-.04.15-.12.18-.28.11-1.04-.48-1.69-2-1.69-3.21 0-2.62 1.9-5.02 5.48-5.02 2.88 0 5.12 2.05 5.12 4.8 0 2.86-1.8 5.16-4.31 5.16-.84 0-1.63-.44-1.9-.96l-.52 1.97c-.19.72-.7 1.63-1.04 2.18A12 12 0 1 0 12 0z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="about.html" class="footer-link">Artisanal Story</a></li>
+            <li><a href="products.html" class="footer-link">Mattress Studio</a></li>
+            <li><a href="blog.html" class="footer-link">Sleep Journal</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">Trial &amp; Delivery</a></li>
+            <li><a href="contact.html" class="footer-link">Flagship Showrooms</a></li>
+          </ul>
+        </div>
+
+        <!-- Collections Col -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" class="footer-link">Celestial Hybrid <span class="tag-badge">Popular</span></a></li>
+            <li><a href="products.html" class="footer-link">Organic Latex</a></li>
+            <li><a href="products.html" class="footer-link">Zero-Gravity Memory</a></li>
+            <li><a href="products.html" class="footer-link">Orthocare Spinal Rest</a></li>
+            <li><a href="products.html" class="footer-link">Goose Down Pillows</a></li>
+            <li><a href="products.html" class="footer-link">Mulberry Silk Duvets</a></li>
+          </ul>
+        </div>
+
+        <!-- Client Care Col -->
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links">
+            <li><a href="trial-delivery.html" class="footer-link">100-Night Home Trial</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">White-Glove Setup</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">20-Year Warranty</a></li>
+            <li><a href="about.html" class="footer-link">Materials Provenance</a></li>
+            <li><a href="contact.html#showroomBookingSection" class="footer-link">Private Consultation</a></li>
+            <li><a href="contact.html" class="footer-link">Concierge: (212) 555-8920</a></li>
+          </ul>
+        </div>
+
+        <!-- VIP Sleep Gazette Card -->
+        <div>
+          <div class="footer-gazette-card">
+            <span class="footer-gazette-badge">✨ VIP Access</span>
+            <h4 class="footer-gazette-title">Join The Nocturne Circle</h4>
+            <p class="footer-gazette-desc">
+              Receive private preview invites, sleep ergonomics journals, and bespoke seasonal releases.
+            </p>
+            <form class="footer-newsletter-unified newsletter-form-trigger" onsubmit="event.preventDefault(); if(window.AuraCart){window.AuraCart.showToast('Subscribed to VIP Circle', 'Welcome to the Nocturne Circle.', 'success');}">
+              <input type="email" placeholder="Your email address..." required>
+              <button type="submit">Join →</button>
+            </form>
+            <div class="footer-gazette-privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>100% Private. Unsubscribe anytime.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>© 2026 COMFORA Luxury Sleep Studio Ltd. All rights reserved. Handcrafted European luxury.</div>
+        <div class="footer-bottom-links">
+          <a href="trial-delivery.html">Privacy Protocol</a>
+          <a href="trial-delivery.html">Terms of Service</a>
+          <a href="trial-delivery.html">100-Night Guarantee</a>
+          <a href="contact.html">Global Showrooms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Drawers & Modals -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title"><span>Shopping Bag</span><span class="drawer-count-badge cart-count-badge">0</span></div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeCartDrawer()">✕</button>
+    </div>
+    <div class="drawer-progress-box">
+      <div id="cartFreeShippingText">Add $1,000 to unlock Free White-Glove Setup.</div>
+      <div class="progress-track"><div class="progress-bar-fill" id="cartFreeShippingFill" style="width: 0%;"></div></div>
+    </div>
+    <div class="drawer-body" id="cartDrawerBody"></div>
+    <div class="drawer-footer">
+      <div class="cart-subtotal-row"><span>Subtotal:</span><span id="cartDrawerSubtotal">$0</span></div>
+      <button class="btn btn-primary btn-lg" id="cartCheckoutBtn" style="width: 100%;">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <div class="wishlist-drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title"><span>Saved Wishlist</span><span class="drawer-count-badge wishlist-count-badge">0</span></div>
+      <button class="drawer-close-btn" onclick="AuraCart.closeWishlistDrawer()">✕</button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerBody"></div>
+  </div>
+
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal-container search-modal-container">
+      <button class="modal-close-btn" id="searchModalClose">✕</button>
+      <span class="section-tag no-after">Search Collection</span>
+      <h3 style="font-family: var(--font-serif); font-size: 1.45rem; margin-bottom: 1.25rem;">Search Mattresses &amp; Bedding</h3>
+      <div class="search-input-box">
+        <input type="text" id="globalSearchInput" placeholder="Search by type, size, or material...">
+      </div>
+      <div id="globalSearchResults" class="search-results-list"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

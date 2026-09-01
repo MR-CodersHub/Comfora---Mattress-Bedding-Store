@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biomechanics of Restorative Sleep | COMFORA Journal</title>
+  <meta name="description" content="Discover how anatomical spinal alignment, pressure relief, and thermoregulation govern deep delta-wave REM sleep cycles in this clinical editorial by COMFORA.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body class="page-blog-detail">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">COMFORA</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="trial-delivery.html" class="nav-link">Trial &amp; Delivery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-action-btn header-cart-btn" onclick="AuraCart.openCartDrawer()" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="header-badge-count cart-count-badge">0</span></button>
+        <button class="header-action-btn header-theme-toggle" onclick="AuraTheme.toggleTheme(event)" aria-label="Toggle Theme" title="Toggle Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button class="header-rtl-btn header-rtl-toggle" onclick="AuraTheme.toggleRTL(event)" aria-label="Toggle Direction" title="Toggle RTL/LTR">RTL</button>
+        <a href="products.html" class="btn btn-primary btn-sm header-cta-btn">Shop Collection</a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-text">
+        <span class="brand-name" style="font-size: 1.25rem;">COMFORA</span>
+      </div>
+    </div>
+
+    <!-- Mobile Cart Button in Drawer -->
+    <div class="mobile-drawer-cart-row">
+      <button class="mobile-drawer-cart-btn" onclick="AuraCart.openCartDrawer(); document.getElementById('mobileNavClose').click();">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span>Shopping Bag (<strong class="cart-count-badge">0</strong>)</span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+      <a href="home2.html" class="mobile-nav-link">Home 2 <span>→</span></a>
+      <a href="about.html" class="mobile-nav-link">About Us <span>→</span></a>
+      <a href="products.html" class="mobile-nav-link">Mattresses &amp; Bedding <span>→</span></a>
+      <a href="blog.html" class="mobile-nav-link active">Sleep Journal <span>→</span></a>
+      <a href="trial-delivery.html" class="mobile-nav-link">100-Night Trial &amp; Delivery <span>→</span></a>
+      <a href="contact.html" class="mobile-nav-link">Showrooms &amp; Contact <span>→</span></a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+      <a href="products.html" class="btn btn-primary btn-block" style="width: 100%; margin-bottom: 0.75rem; text-align: center;">Shop Collection</a>
+      <div style="font-size: 0.8125rem; color: var(--text-muted); text-align: center;">VIP Concierge: +1 (212) 555-8920</div>
+    </div>
+  </aside>
+
+  <!-- MAIN ARTICLE CONTENT -->
+  <main id="mainContent">
+
+    <!-- ARTICLE HEADER SECTION -->
+    <section class="section-padding-sm" style="background: radial-gradient(circle at 70% 30%, var(--bg-card-alt) 0%, var(--bg-card) 60%);">
+      <div class="container">
+        <div class="article-header">
+          <div class="article-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="blog.html">Sleep Journal</a>
+            <span>/</span>
+            <span>Sleep Science</span>
+          </div>
+
+          <span class="section-tag" style="margin-bottom: 0.75rem;">Circadian Neuroscience</span>
+          
+          <h1 class="article-title">
+            The Biomechanics of Restorative Sleep: How Spine Alignment Governs REM Cycles
+          </h1>
+
+          <div class="article-meta-bar">
+            <div class="article-author-pill">
+              <img src="assets/images/craftsmanship.jpg" alt="Dr. Alistair Vance" class="article-author-avatar">
+              <span>By <strong>Dr. Alistair Vance</strong> (Chief Ergonomist)</span>
+            </div>
+            <span>•</span>
+            <span>Published August 24, 2026</span>
+            <span>•</span>
+            <span>6 min read</span>
+          </div>
+        </div>
+
+        <!-- Featured Article Hero Image -->
+        <div class="article-featured-media">
+          <img src="assets/images/hero_main.jpg" alt="Master bedroom with perfect biomechanical mattress alignment">
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE BODY CONTENT SECTION -->
+    <section class="section-padding" style="background-color: var(--bg-card);" id="articleBodySection">
+      <div class="container">
+        <div class="article-content-container">
+          
+          <p class="article-lead">
+            Human sleep architecture is intrinsically tethered to physical ergonomics. Recent polysomnography trials demonstrate that maintaining true vertebral decompression directly reduces nocturnal micro-arousals by up to 38%, fundamentally transforming restorative delta-wave sleep.
+          </p>
+
+          <h2>1. The Lumbar Lordosis Equilibrium</h2>
+          <p>
+            When recumbent, the human spine does not naturally form a flat plane. The lumbar lordosis curve demands gentle upward buoyant resistance, while the broader thoracic cage and pelvis require progressive sinkage to prevent rotational torque on intervertebral discs.
+          </p>
+          <p>
+            Traditional single-density or rigid continuous-wire mattresses force the heavier pelvis upward or let the lumbar arch hammock unsupported. This induces muscular guarding—a state where spinal erectors remain semi-contracted during the night, elevating sympathetic nervous system tone and precluding stage-4 slow-wave sleep.
+          </p>
+
+          <!-- Key Takeaway Callout Box -->
+          <div class="article-callout-box">
+            <h4>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              Clinical Observation: The 0° Vertebral Neutrality
+            </h4>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
+              Biomechanical sensors demonstrate that a 7-zone progressive support core maintains 0° cervical-thoracic deviation across both lateral and supine sleeping postures, preventing morning stiffness and occipital tension.
+            </p>
+          </div>
+
+          <h2>2. Capillary Occlusion &amp; Micro-Awakenings</h2>
+          <p>
+            When mattress surface pressure exceeds 32 mmHg (the standard capillary closing pressure of human dermis), local blood perfusion is restricted at bony landmarks like the greater trochanter and acromion process.
+          </p>
+          <p>
+            The brain responds to ischemic tissue discomfort by triggering subconscious positional shifts. A sleeper on an unsupportive mattress changes positions 40 to 60 times each night. By contrast, a zoned botanical latex and pocket coil mattress distributes contact pressure below 22 mmHg, reducing toss-and-turn frequency to fewer than 12 times per sleep cycle.
+          </p>
+
+          <!-- Pull Quote -->
+          <blockquote class="article-quote">
+            "A truly restorative mattress should be imperceptible beneath you. You should feel neither hard resistance nor suffocating sinkage—only a buoyant, weightless equilibrium."
+          </blockquote>
+
+          <h2>3. Nocturnal Thermoregulation &amp; Microclimate</h2>
+          <p>
+            Sleep onset is biologically triggered by a 1.0°C drop in core body temperature. Closed-cell synthetic memory foams often trap conductive heat, elevating skin temperature and causing nocturnal sleep fragmentation.
+          </p>
+          <p>
+            By utilizing open-cell botanical Dunlop latex coupled with 100% natural French flax linen and long-strand mulberry silk covers, the sleep microclimate actively wicks humidity away from the body, maintaining an optimal 18.5°C skin contact boundary.
+          </p>
+
+          <!-- Social Share Bar -->
+          <div class="article-share-bar">
+            <div style="font-weight: 700; font-size: 0.875rem; color: var(--text-primary);">Share this Article:</div>
+            <div style="display: flex; gap: 0.75rem;">
+              <button class="btn btn-secondary btn-sm" onclick="navigator.clipboard.writeText(window.location.href); AuraToast.show('Article link copied to clipboard!');" style="padding: 0.35rem 0.85rem; font-size: 0.775rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy Link</span>
+              </button>
+              <a href="https://twitter.com" target="_blank" class="btn btn-secondary btn-sm" style="padding: 0.35rem 0.85rem; font-size: 0.775rem;">
+                Twitter / X
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" class="btn btn-secondary btn-sm" style="padding: 0.35rem 0.85rem; font-size: 0.775rem;">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <!-- Author Spotlight Box -->
+          <div class="article-author-card">
+            <img src="assets/images/craftsmanship.jpg" alt="Dr. Alistair Vance" class="author-card-avatar">
+            <div>
+              <div class="author-card-name">Dr. Alistair Vance, D.C.</div>
+              <div class="author-card-role">Director of Biomechanics &amp; Ergonomics • COMFORA</div>
+              <p class="author-card-bio">
+                Dr. Vance is a clinical ergonomics researcher and consultant to European sleep laboratories. He has authored over 20 peer-reviewed papers on nocturnal spinal biomechanics and non-invasive sleep posture therapies.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: RELATED SLEEP JOURNAL ARTICLES -->
+    <section class="section-padding-sm" style="background-color: var(--bg-card-alt); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <span class="section-tag">Continue Reading</span>
+          <h2 class="section-title" style="font-size: clamp(1.8rem, 2.8vw, 2.4rem);">Related Sleep Science Articles</h2>
+        </div>
+
+        <div class="blog-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 1140px; margin: 0 auto;">
+          <!-- Related 1 -->
+          <div class="blog-card">
+            <div class="blog-media">
+              <img src="assets/images/hero_editorial.jpg" alt="Sleep posture and pressure points">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-tag">Sleep Health</span>
+                <span>• 5 min read</span>
+              </div>
+              <h3 class="blog-title" style="font-size: 1.15rem;">How Pressure Points Trigger Micro-Arousals and Prevent Deep Sleep</h3>
+              <p class="blog-desc">Why traditional hard mattresses cause capillary occlusion at the hips and shoulders.</p>
+              <div class="blog-footer">
+                <span>By Dr. Alistair Vance</span>
+                <a href="blog-detail.html" style="color: var(--accent-bronze); font-weight: 700;">Read Story →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Related 2 -->
+          <div class="blog-card">
+            <div class="blog-media">
+              <img src="assets/images/anatomy_cutaway.jpg" alt="18.5C Bedroom microclimate">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-tag">Thermoregulation</span>
+                <span>• 7 min read</span>
+              </div>
+              <h3 class="blog-title" style="font-size: 1.15rem;">The 18.5°C Bedroom Standard: Managing Thermal Heat Flux During Sleep</h3>
+              <p class="blog-desc">Why synthetic polyester blankets trap humidity and how natural long-strand silk duvets regulate human skin temperature.</p>
+              <div class="blog-footer">
+                <span>By Sophie Laurent</span>
+                <a href="blog-detail.html" style="color: var(--accent-bronze); font-weight: 700;">Read Story →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Related 3 -->
+          <div class="blog-card">
+            <div class="blog-media">
+              <img src="assets/images/bedding_pillows.jpg" alt="Botanical latex vs memory foam">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-tag">Materials Science</span>
+                <span>• 6 min read</span>
+              </div>
+              <h3 class="blog-title" style="font-size: 1.15rem;">Botanical Dunlop Latex vs Memory Foam: A 20-Year Durability Study</h3>
+              <p class="blog-desc">Analyzing tensile degradation, resilience loss, and volatile organic compound off-gassing across two decades.</p>
+              <div class="blog-footer">
+                <span>By Henrik Lindqvist</span>
+                <a href="blog-detail.html" style="color: var(--accent-bronze); font-weight: 700;">Read Story →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- Footer Top Concierge & Trust Pillars Strip -->
+      <div class="footer-top-strip">
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">Artisanal Mastery</div>
+            <div class="footer-pillar-sub">Hand-tufted in European workshops</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">100-Night Trial</div>
+            <div class="footer-pillar-sub">100% risk-free in-home testing</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">White-Glove Setup</div>
+            <div class="footer-pillar-sub">Complimentary 2-person delivery</div>
+          </div>
+        </div>
+
+        <div class="footer-pillar-card">
+          <div class="footer-pillar-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="footer-pillar-title">20-Year Guarantee</div>
+            <div class="footer-pillar-sub">Premier non-prorated warranty</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Main Grid -->
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">COMFORA</span>
+              <span class="brand-tagline">Luxury Sleep • EST. 1988</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Handcrafting European luxury sleep systems, botanical latex mattresses, and pure mulberry silk bedding since 1988.
+          </p>
+          <div class="footer-trust-badges">
+            <span class="footer-trust-pill">✓ OEKO-TEX® 100</span>
+            <span class="footer-trust-pill">✓ GOLS Organic Latex</span>
+            <span class="footer-trust-pill">✓ GOTS Certified</span>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.07-.98-.13-2.5.03-3.57.14-.98.93-6.33.93-6.33s-.24-.48-.24-1.18c0-1.11.64-1.94 1.45-1.94.68 0 1.01.51 1.01 1.13 0 .69-.44 1.72-.66 2.67-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.51 2.53-3.68 0-1.93-1.38-3.27-3.36-3.27-2.29 0-3.64 1.72-3.64 3.49 0 .69.27 1.43.6 1.83.07.08.08.15.06.23-.06.26-.2.83-.23.95-.04.15-.12.18-.28.11-1.04-.48-1.69-2-1.69-3.21 0-2.62 1.9-5.02 5.48-5.02 2.88 0 5.12 2.05 5.12 4.8 0 2.86-1.8 5.16-4.31 5.16-.84 0-1.63-.44-1.9-.96l-.52 1.97c-.19.72-.7 1.63-1.04 2.18A12 12 0 1 0 12 0z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Col -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home (Classic)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Editorial)</a></li>
+            <li><a href="about.html" class="footer-link">Artisanal Story</a></li>
+            <li><a href="products.html" class="footer-link">Mattress Studio</a></li>
+            <li><a href="blog.html" class="footer-link">Sleep Journal</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">Trial &amp; Delivery</a></li>
+            <li><a href="contact.html" class="footer-link">Flagship Showrooms</a></li>
+          </ul>
+        </div>
+
+        <!-- Collections Col -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html" class="footer-link">Celestial Hybrid <span class="tag-badge">Popular</span></a></li>
+            <li><a href="products.html" class="footer-link">Organic Latex</a></li>
+            <li><a href="products.html" class="footer-link">Zero-Gravity Memory</a></li>
+            <li><a href="products.html" class="footer-link">Orthocare Spinal Rest</a></li>
+            <li><a href="products.html" class="footer-link">Goose Down Pillows</a></li>
+            <li><a href="products.html" class="footer-link">Mulberry Silk Duvets</a></li>
+          </ul>
+        </div>
+
+        <!-- Client Care Col -->
+        <div>
+          <h4 class="footer-col-title">Client Care</h4>
+          <ul class="footer-links">
+            <li><a href="trial-delivery.html" class="footer-link">100-Night Home Trial</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">White-Glove Setup</a></li>
+            <li><a href="trial-delivery.html" class="footer-link">20-Year Warranty</a></li>
+            <li><a href="about.html" class="footer-link">Materials Provenance</a></li>
+            <li><a href="contact.html#showroomBookingSection" class="footer-link">Private Consultation</a></li>
+            <li><a href="contact.html" class="footer-link">Concierge: (212) 555-8920</a></li>
+          </ul>
+        </div>
+
+        <!-- VIP Sleep Gazette Card -->
+        <div>
+          <div class="footer-gazette-card">
+            <span class="footer-gazette-badge">✨ VIP Access</span>
+            <h4 class="footer-gazette-title">Join The Nocturne Circle</h4>
+            <p class="footer-gazette-desc">
+              Receive private preview invites, sleep ergonomics journals, and bespoke seasonal releases.
+            </p>
+            <form class="footer-newsletter-unified newsletter-form-trigger" onsubmit="event.preventDefault(); if(window.AuraCart){window.AuraCart.showToast('Subscribed to VIP Circle', 'Welcome to the Nocturne Circle.', 'success');}">
+              <input type="email" placeholder="Your email address..." required>
+              <button type="submit">Join →</button>
+            </form>
+            <div class="footer-gazette-privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span>100% Private. Unsubscribe anytime.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>© 2026 COMFORA Luxury Sleep Studio Ltd. All rights reserved. Handcrafted European luxury.</div>
+        <div class="footer-bottom-links">
+          <a href="trial-delivery.html">Privacy Protocol</a>
+          <a href="trial-delivery.html">Terms of Service</a>
+          <a href="trial-delivery.html">100-Night Guarantee</a>
+          <a href="contact.html">Global Showrooms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal-backdrop" id="searchModal">
+    <div class="search-modal-content">
+      <div class="search-modal-header">
+        <input type="text" class="search-modal-input" id="searchModalInput" placeholder="Search mattresses, pillows, silk bedding...">
+        <button class="modal-close-btn" id="searchModalClose">✕</button>
+      </div>
+      <div class="search-results-box" id="searchResultsBox">
+        <div style="padding: 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.875rem;">
+          Type to search our handcrafted mattresses, bedding, and sleep guides...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer Modal -->
+  <div class="drawer-backdrop" id="wishlistDrawer">
+    <aside class="drawer-panel">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Saved Wishlist</h3>
+        <button class="drawer-close-btn" id="wishlistDrawerClose">✕</button>
+      </div>
+      <div class="drawer-body" id="wishlistDrawerBody"></div>
+      <div class="drawer-footer">
+        <a href="products.html" class="btn btn-primary" style="width: 100%;">Browse Complete Catalog</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Cart Drawer Modal -->
+  <div class="drawer-backdrop" id="cartDrawer">
+    <aside class="drawer-panel">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Your Sleep Bag</h3>
+        <button class="drawer-close-btn" id="cartDrawerClose">✕</button>
+      </div>
+      <div class="drawer-body" id="cartDrawerBody"></div>
+      <div class="drawer-footer" id="cartDrawerFooter"></div>
+    </aside>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JavaScript Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/blog-detail.js"></script>
+</body>
+</html>
